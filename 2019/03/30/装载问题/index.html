@@ -96,25 +96,24 @@
 
 
 
-  <meta name="description" content="回溯法(Back Tracking  Algorithm)与分支限界法（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。 回溯法也称试探法，可以把它看成是一个在约束条件下对解空间树进行深度优先搜索的过程，并在搜索过程中剪去那些不满足条件的分">
-<meta name="keywords" content="算法,回溯法,分支限界法">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
 <meta property="og:type" content="article">
-<meta property="og:title" content="回溯法与分支限界法">
-<meta property="og:url" content="http://1013ciel.github.io/2019/03/29/回溯法与分支限界法/index.html">
+<meta property="og:title" content="装载问题">
+<meta property="og:url" content="http://1013ciel.github.io/2019/03/30/装载问题/index.html">
 <meta property="og:site_name" content="ciel的博客">
-<meta property="og:description" content="回溯法(Back Tracking  Algorithm)与分支限界法（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。 回溯法也称试探法，可以把它看成是一个在约束条件下对解空间树进行深度优先搜索的过程，并在搜索过程中剪去那些不满足条件的分">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-29T12:19:19.082Z">
+<meta property="og:updated_time" content="2019-03-30T02:06:55.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="回溯法与分支限界法">
-<meta name="twitter:description" content="回溯法(Back Tracking  Algorithm)与分支限界法（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。 回溯法也称试探法，可以把它看成是一个在约束条件下对解空间树进行深度优先搜索的过程，并在搜索过程中剪去那些不满足条件的分">
+<meta name="twitter:title" content="装载问题">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
 
 
 
 
 
 
-  <link rel="canonical" href="http://1013ciel.github.io/2019/03/29/回溯法与分支限界法/">
+  <link rel="canonical" href="http://1013ciel.github.io/2019/03/30/装载问题/">
 
 
 
@@ -124,7 +123,7 @@
   };
 </script>
 
-  <title>回溯法与分支限界法 | ciel的博客</title>
+  <title>装载问题 | ciel的博客</title>
   
 
 
@@ -340,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://1013ciel.github.io/2019/03/29/回溯法与分支限界法/">
+    <link itemprop="mainEntityOfPage" href="http://1013ciel.github.io/2019/03/30/装载问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ciel">
@@ -357,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">回溯法与分支限界法
+          <h1 class="post-title" itemprop="name headline">装载问题
 
               
             
@@ -383,7 +382,7 @@
                 
               
 
-              <time title="创建时间：2019-03-29 19:28:10 / 修改时间：20:19:19" itemprop="dateCreated datePublished" datetime="2019-03-29T19:28:10+08:00">2019-03-29</time>
+              <time title="创建时间：2019-03-30 09:42:36 / 修改时间：10:06:55" itemprop="dateCreated datePublished" datetime="2019-03-30T09:42:36+08:00">2019-03-30</time>
             
 
             
@@ -393,24 +392,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -447,12 +428,7 @@
       
 
       
-        <p><strong>回溯法</strong>(Back Tracking  Algorithm)与<strong>分支限界法</strong>（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。</p>
-<h2 id="回溯法"><a href="#回溯法" class="headerlink" title="回溯法"></a>回溯法</h2><p>也称试探法，可以把它看成是一个在约束条件下对解空间树进行深度优先搜索的过程，并在搜索过程中剪去那些不满足条件的分支。当用回溯法搜索到解空间树的某个结点时，如果发现当前路径不满足约束条件或不是历史最优时，则放弃对该结点的子树的搜索，并逐层向其祖先结点返回。否则，进入该结点的子树，继续进行深度优先搜索。实质上，这是一个先根遍历解空间树的过程，只是这个棵树不是遍历前预先建立的，而是隐含在遍历过程当中的。</p>
-<p><em>相似思想：图的深度优先搜索，二叉树的后序遍历</em></p>
-<p>回溯法的基本行为是搜索，搜索过程使用剪枝函数来为了避免无效的搜索。剪枝函数包括两类：1. 使用约束函数，剪去不满足约束条件的路径；2.使用限界函数，剪去不能得到最优解的路径。</p>
-<h2 id="分支限界法"><a href="#分支限界法" class="headerlink" title="分支限界法"></a>分支限界法</h2><p>以最小代价优先的方式在解空间树上进行搜索，它可以找出满足问题约束的一个可行解，或者是从满足约束条件的可行解中找出一个使得目标函数达到极值的最优解。这里的可行解在搜索树中表现为一条由根到叶子结点的路径，这条路径上权值的和为可行解的值。其中，最优解就是使可行解的值达到最优的那条路径。分支限界算法的<strong>核心思想</strong>就是增加更多的约束条件，剪掉更多的分支，当对当前的树结点进行扩展时，一次性产生其所有儿子结点，并抛弃那些不可能产生可行解或最优解的结点，即剪枝；对于留下的儿子结点，计算一个函数值（限界），然后选取一个最有利的结点继续进行扩展，使得搜索朝着最优解的分支推进。重复这个过程直到找到最优解或没有可扩展的结点。</p>
-<p><em>相似思想：图的广度优先算的，二叉树的层序遍历</em></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;stdio.h&quot;</span><br><span class="line">#include &quot;string.h&quot;</span><br><span class="line"></span><br><span class="line">int A[10]=&#123;7,2,6,4,5&#125;;//假设的每个集装箱的重量</span><br><span class="line">int n=5;</span><br><span class="line">int ans[10];//表示集装箱的状态，0表示不装，1表示装载</span><br><span class="line">int maxw=10;//假设船能承受的最大重量</span><br><span class="line">int goodvalue=-1;</span><br><span class="line">int goodpath[10]=&#123;0&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  int i=0,j;</span><br><span class="line">  for(i=0;i&lt;n;i++)ans[i]=-1;</span><br><span class="line">  i=0;</span><br><span class="line">  while (i&gt;=0) &#123;</span><br><span class="line">    if(i==n)</span><br><span class="line">    &#123;</span><br><span class="line">      int sum=0;</span><br><span class="line">      for(j=0;j&lt;n;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">      if(sum&lt;=maxw&amp;&amp;sum&gt;goodvalue)&#123;</span><br><span class="line">        goodvalue=sum;</span><br><span class="line">        memcpy(goodpath,ans,4*n);</span><br><span class="line">      &#125;</span><br><span class="line">      i--;continue;</span><br><span class="line">    &#125;</span><br><span class="line">    int sum=0;</span><br><span class="line">    for(j=0;j&lt;i;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">    if(sum&gt;maxw)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line">    for(j=i;j&lt;n;j++)sum+=A[j];</span><br><span class="line">    if(sum&lt;goodvalue)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    //处理第i个物品</span><br><span class="line">    ans[i]++;</span><br><span class="line">    if(ans[i]==2)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    i++;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;answer=%d\n&quot;,goodvalue);</span><br><span class="line">  for(i=0;i&lt;n;i++)printf(&quot;%d\n&quot;,goodpath[i] );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -474,16 +450,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/算法/" rel="tag"># 算法</a>
-          
-            <a href="/tags/回溯法/" rel="tag"># 回溯法</a>
-          
-            <a href="/tags/分支限界法/" rel="tag"># 分支限界法</a>
-          
-        </div>
-      
 
       
       
@@ -493,8 +459,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/29/旅行商/" rel="next" title="旅行商">
-                <i class="fa fa-chevron-left"></i> 旅行商
+              <a href="/2019/03/29/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
               </a>
             
           </div>
@@ -502,10 +468,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/29/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -549,17 +511,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -655,23 +608,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯法"><span class="nav-number">1.</span> <span class="nav-text">回溯法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支限界法"><span class="nav-number">2.</span> <span class="nav-text">分支限界法</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
