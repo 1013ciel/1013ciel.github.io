@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
+  <meta name="description" content="老师的示例代码 1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[1">
+<meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="装载问题">
 <meta property="og:url" content="http://1013ciel.github.io/2019/03/30/装载问题/index.html">
 <meta property="og:site_name" content="ciel的博客">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
+<meta property="og:description" content="老师的示例代码 1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-30T02:06:55.249Z">
+<meta property="og:updated_time" content="2019-03-30T02:39:22.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="装载问题">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集">
+<meta name="twitter:description" content="老师的示例代码 1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;quot;stdio.h&amp;quot;#include &amp;quot;string.h&amp;quot;int A[10]=&amp;#123;7,2,6,4,5&amp;#125;;//假设的每个集装箱的重量int n=5;int ans[1">
 
 
 
@@ -382,7 +383,7 @@
                 
               
 
-              <time title="创建时间：2019-03-30 09:42:36 / 修改时间：10:06:55" itemprop="dateCreated datePublished" datetime="2019-03-30T09:42:36+08:00">2019-03-30</time>
+              <time title="创建时间：2019-03-30 09:42:36 / 修改时间：10:39:22" itemprop="dateCreated datePublished" datetime="2019-03-30T09:42:36+08:00">2019-03-30</time>
             
 
             
@@ -392,6 +393,45 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/回溯法/" itemprop="url" rel="index"><span itemprop="name">回溯法</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/回溯法/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/回溯法/算法/题目/" itemprop="url" rel="index"><span itemprop="name">题目</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/回溯法/算法/题目/课堂题目/" itemprop="url" rel="index"><span itemprop="name">课堂题目</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -428,7 +468,8 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;stdio.h&quot;</span><br><span class="line">#include &quot;string.h&quot;</span><br><span class="line"></span><br><span class="line">int A[10]=&#123;7,2,6,4,5&#125;;//假设的每个集装箱的重量</span><br><span class="line">int n=5;</span><br><span class="line">int ans[10];//表示集装箱的状态，0表示不装，1表示装载</span><br><span class="line">int maxw=10;//假设船能承受的最大重量</span><br><span class="line">int goodvalue=-1;</span><br><span class="line">int goodpath[10]=&#123;0&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  int i=0,j;</span><br><span class="line">  for(i=0;i&lt;n;i++)ans[i]=-1;</span><br><span class="line">  i=0;</span><br><span class="line">  while (i&gt;=0) &#123;</span><br><span class="line">    if(i==n)</span><br><span class="line">    &#123;</span><br><span class="line">      int sum=0;</span><br><span class="line">      for(j=0;j&lt;n;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">      if(sum&lt;=maxw&amp;&amp;sum&gt;goodvalue)&#123;</span><br><span class="line">        goodvalue=sum;</span><br><span class="line">        memcpy(goodpath,ans,4*n);</span><br><span class="line">      &#125;</span><br><span class="line">      i--;continue;</span><br><span class="line">    &#125;</span><br><span class="line">    int sum=0;</span><br><span class="line">    for(j=0;j&lt;i;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">    if(sum&gt;maxw)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line">    for(j=i;j&lt;n;j++)sum+=A[j];</span><br><span class="line">    if(sum&lt;goodvalue)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    //处理第i个物品</span><br><span class="line">    ans[i]++;</span><br><span class="line">    if(ans[i]==2)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    i++;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;answer=%d\n&quot;,goodvalue);</span><br><span class="line">  for(i=0;i&lt;n;i++)printf(&quot;%d\n&quot;,goodpath[i] );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>老师的示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;stdio.h&quot;</span><br><span class="line">#include &quot;string.h&quot;</span><br><span class="line"></span><br><span class="line">int A[10]=&#123;7,2,6,4,5&#125;;//假设的每个集装箱的重量</span><br><span class="line">int n=5;</span><br><span class="line">int ans[10];//表示集装箱的状态，0表示不装，1表示装载</span><br><span class="line">int maxw=10;//假设船能承受的最大重量</span><br><span class="line">int goodvalue=-1;</span><br><span class="line">int goodpath[10]=&#123;0&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  int i=0,j;</span><br><span class="line">  for(i=0;i&lt;n;i++)ans[i]=-1;</span><br><span class="line">  i=0;</span><br><span class="line">  while (i&gt;=0) &#123;</span><br><span class="line">    if(i==n)</span><br><span class="line">    &#123;</span><br><span class="line">      int sum=0;</span><br><span class="line">      for(j=0;j&lt;n;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">      if(sum&lt;=maxw&amp;&amp;sum&gt;goodvalue)&#123;</span><br><span class="line">        goodvalue=sum;</span><br><span class="line">        memcpy(goodpath,ans,4*n);</span><br><span class="line">      &#125;</span><br><span class="line">      i--;continue;</span><br><span class="line">    &#125;</span><br><span class="line">    int sum=0;</span><br><span class="line">    for(j=0;j&lt;i;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">    if(sum&gt;maxw)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line">    for(j=i;j&lt;n;j++)sum+=A[j];</span><br><span class="line">    if(sum&lt;goodvalue)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    //处理第i个物品</span><br><span class="line">    ans[i]++;</span><br><span class="line">    if(ans[i]==2)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    i++;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;answer=%d\n&quot;,goodvalue);</span><br><span class="line">  for(i=0;i&lt;n;i++)printf(&quot;%d\n&quot;,goodpath[i] );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -449,6 +490,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
+          
+        </div>
       
 
       
@@ -550,7 +597,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -581,7 +636,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -593,6 +650,21 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/1013ciel" title="GitHub &rarr; https://github.com/1013ciel" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
