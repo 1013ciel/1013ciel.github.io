@@ -381,12 +381,24 @@
                 
               
 
-              <time title="创建时间：2019-05-24 21:42:39 / 修改时间：23:31:02" itemprop="dateCreated datePublished" datetime="2019-05-24T21:42:39+08:00">2019-05-24</time>
+              <time title="创建时间：2019-05-24 21:42:39" itemprop="dateCreated datePublished" datetime="2019-05-24T21:42:39+08:00">2019-05-24</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-25 17:08:44" itemprop="dateModified" datetime="2019-05-25T17:08:44+08:00">2019-05-25</time>
               
             
           </span>
@@ -440,18 +452,68 @@
       
         
           
-            <h1 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h1><p>###计算机系统</p>
+            <h1 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>1.1 计算机系统的软硬件</strong></p>
 <ul>
 <li><strong>硬件</strong>：计算机的实体：主机，外设</li>
-<li><strong>软件</strong>：由各类具有特殊功能的信息（程序）组成</li>
-</ul>
-<p>—<strong>软件</strong></p>
-<ul>
+<li><p><strong>软件</strong>：由各类具有特殊功能的信息（程序）组成</p>
+<p><em>软件</em></p>
+</li>
 <li>系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……）</li>
 <li>应用软件：按任务需要编制成的各种程序</li>
 </ul>
-<p><strong>计算机解题过程</strong><br><img src="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png" alt="计算机解题过程"></p>
-
+<p><strong>1.2计算机解题过程</strong><br><img src="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png" alt="计算机解题过程"></p>
+<p><strong>计算机系统的层次结构</strong><br>|            |              |      |                              |<br>| ———- | ———— | —- | —————————- |<br>| 高级语言   | 虚拟机器M4   | 软件 | 用编译程序翻译成汇编语言程序 |<br>| 汇编语言   | 虚拟机器M3   | 软件 | 用汇编程序翻译成机器语言程序 |<br>| 操作系统   | 虚拟机器M2   | 软件 | 用机器语言解释操作系统       |<br>| 机器语言   | 实际机器M1   | 硬件 | 用微指令解释机器指令         |<br>| 微指令系统 | 微程序机器M0 | 硬件 | 由硬盘直接执行微指令         |</p>
+<p><strong>计算机体系结构和计算机组成</strong></p>
+<ul>
+<li>计算机体系结构：程序员所见到的计算机系统的属性，概念性的结构与功能特性（指令系统、数据类型、寻址技术、I/O原理）</li>
+<li>计算机组成：实现计算机体系结构所体现的属性</li>
+</ul>
+<h2 id="计算机的基本组成"><a href="#计算机的基本组成" class="headerlink" title="计算机的基本组成"></a>计算机的基本组成</h2><h3 id="冯诺依曼计算机"><a href="#冯诺依曼计算机" class="headerlink" title="冯诺依曼计算机"></a>冯诺依曼计算机</h3><p><img src="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png" alt="TIM图片20190525164050.png"></p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>部件</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>运算器</td>
+<td>完成算术运算和逻辑运算，并将运算的中间结果暂存在运算器内</td>
+</tr>
+<tr>
+<td>2</td>
+<td>存储器</td>
+<td>存放数据和程序</td>
+</tr>
+<tr>
+<td>3</td>
+<td>控制器</td>
+<td>控制、指挥程序和数据的输入、运行以及处理运算结果</td>
+</tr>
+<tr>
+<td>4</td>
+<td>输入设备</td>
+<td>将信息转化成机器能识别的形式</td>
+</tr>
+<tr>
+<td>5</td>
+<td>输出设备</td>
+<td>将运算结果转化成人们熟悉的形式</td>
+</tr>
+</tbody>
+</table>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li>1.计算机由五大部分组成</li>
+<li>2.指令和数据以同等地位存于存储器，可按地址寻访</li>
+<li>3.指令和数据用二进制表示</li>
+<li>4.指令由操作码和地址码组成</li>
+<li>5.指令在存储器内按顺序存放</li>
+<li>6.以运算器为中心</li>
+</ul>
+<h3 id="计算机硬件框图"><a href="#计算机硬件框图" class="headerlink" title="计算机硬件框图"></a>计算机硬件框图</h3>
           
         
       
