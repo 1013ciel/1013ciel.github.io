@@ -398,7 +398,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-25 22:30:06" itemprop="dateModified" datetime="2019-05-25T22:30:06+08:00">2019-05-25</time>
+                <time title="修改时间：2019-05-26 22:03:44" itemprop="dateModified" datetime="2019-05-26T22:03:44+08:00">2019-05-26</time>
               
             
           </span>
@@ -589,7 +589,62 @@
 <li>串行通信总线</li>
 <li>并行通信总线</li>
 </ul>
-<h2 id="总线特性及性能指标"><a href="#总线特性及性能指标" class="headerlink" title="总线特性及性能指标"></a>总线特性及性能指标</h2><h2 id="总线结构"><a href="#总线结构" class="headerlink" title="总线结构"></a>总线结构</h2><h2 id="总线控制"><a href="#总线控制" class="headerlink" title="总线控制"></a>总线控制</h2><h1 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h1><h1 id="输入输出系统"><a href="#输入输出系统" class="headerlink" title="输入输出系统"></a>输入输出系统</h1><h1 id="计算机的运算方法"><a href="#计算机的运算方法" class="headerlink" title="计算机的运算方法"></a>计算机的运算方法</h1><h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h1 id="cpu的结构和功能"><a href="#cpu的结构和功能" class="headerlink" title="cpu的结构和功能"></a>cpu的结构和功能</h1><h1 id="控制单元的功能"><a href="#控制单元的功能" class="headerlink" title="控制单元的功能"></a>控制单元的功能</h1><h1 id="控制单元的设计"><a href="#控制单元的设计" class="headerlink" title="控制单元的设计"></a>控制单元的设计</h1>
+<h2 id="总线特性及性能指标"><a href="#总线特性及性能指标" class="headerlink" title="总线特性及性能指标"></a>总线特性及性能指标</h2><h3 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h3><ul>
+<li>机械特性：尺寸、形状、管脚数以及排列顺序</li>
+<li>电气特性：传输方向和有效的电平范围</li>
+<li>功能特性：每根传输线的功能：地址，数据，控制</li>
+<li>时间特性：信号的时序关系</li>
+</ul>
+<h3 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h3><p>1.总线宽度：数据线的根数<br>2.标准传输率：每秒传输的最大字节数（MBps）<br>3.时钟同步/异步：同步、不同步<br>4.总线复用：地址线和数据线复用<br>5.信号线数：地址线，数据线，控制线的总和<br>6.总线控制方式：并发、自动、仲裁、逻辑、计数<br>7.其他指标：负载能力</p>
+<h2 id="总线结构"><a href="#总线结构" class="headerlink" title="总线结构"></a>总线结构</h2><p>1.单总线结构<br><img src="https://i.loli.net/2019/05/26/5cea90dc6b31a61619.png" alt="单总线结构"></p>
+<p>2.多总线结构</p>
+<ul>
+<li>双总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9137adb1352276.png" alt="TIM图片20190526211340.png"></li>
+<li>三总线结构<br><img src="https://i.loli.net/2019/05/26/5cea919d978a439107.png" alt="三总线结构"><br><img src="https://i.loli.net/2019/05/26/5cea925b512e624462.png" alt="三总线结构形式2"></li>
+<li>四总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9206ade5583221.png" alt="四总线结构"></li>
+</ul>
+<p>3.总线结构举例</p>
+<ul>
+<li>传统微型机总线结构<br><img src="https://i.loli.net/2019/05/26/5cea92c1a37dd15570.png" alt="TIM图片20190526212044.png"></li>
+<li>VL-BUS局部总线结构<br><img src="https://i.loli.net/2019/05/26/5cea930cf2fb880521.png" alt="TIM图片20190526212211.png"></li>
+<li>PCI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea934c1e70660914.png" alt="TIM图片20190526212315.png"></li>
+<li>多层CPI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea93903668f33425.png" alt="TIM图片20190526212420.png"></li>
+</ul>
+<h2 id="总线控制"><a href="#总线控制" class="headerlink" title="总线控制"></a>总线控制</h2><h3 id="总线判优控制"><a href="#总线判优控制" class="headerlink" title="总线判优控制"></a>总线判优控制</h3><p>1.基本概念</p>
+<ul>
+<li>主设备：对主线有控制权</li>
+<li>从设备：响应从主设备发来的总线命令</li>
+<li>总线判优控制<ul>
+<li>集中式<ul>
+<li>链式查询<br><img src="https://i.loli.net/2019/05/26/5cea94622856199019.png" alt="TIM图片20190526212754.png"></li>
+<li>计时器定时查询<br><img src="https://i.loli.net/2019/05/26/5cea94c03226088054.png" alt="TIM图片20190526212847.png"></li>
+<li>独立请求方式<br><img src="https://i.loli.net/2019/05/26/5cea94e07a75417095.png" alt="TIM图片20190526212951.png"></li>
+</ul>
+</li>
+<li>分布式</li>
+</ul>
+</li>
+</ul>
+<h3 id="总线通信控制"><a href="#总线通信控制" class="headerlink" title="总线通信控制"></a>总线通信控制</h3><p>1.目的：解决通信双方协调配合问题</p>
+<p>2.总线传输周期</p>
+<ul>
+<li>申请分配阶段：主模块申请，总线仲裁决定</li>
+<li>寻址阶段：主模块向从模块给出地址和命令</li>
+<li>传数阶段：主模块和从模块交换数据</li>
+<li>结束阶段：主模块撤销有关信息</li>
+</ul>
+<p>3.总线通信的四种方式</p>
+<ul>
+<li>同步通信：由统一时标控制数据传<ul>
+<li>同步式数据输入<br><img src="https://i.loli.net/2019/05/26/5cea9c49034f374748.png" alt="TIM图片20190526220134.png"></li>
+<li>同步式数据输出<br><img src="https://i.loli.net/2019/05/26/5cea9ca3a222967150.png" alt="TIM图片20190526220303.png"></li>
+</ul>
+</li>
+<li>异步通信：采用应答方式，没有公共时钟标准</li>
+<li>半同步通信：同步、异步结合</li>
+<li>分离式通信：充分挖掘系统总线每个瞬间的潜力</li>
+</ul>
+<h1 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h1><h1 id="输入输出系统"><a href="#输入输出系统" class="headerlink" title="输入输出系统"></a>输入输出系统</h1><h1 id="计算机的运算方法"><a href="#计算机的运算方法" class="headerlink" title="计算机的运算方法"></a>计算机的运算方法</h1><h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h1 id="cpu的结构和功能"><a href="#cpu的结构和功能" class="headerlink" title="cpu的结构和功能"></a>cpu的结构和功能</h1><h1 id="控制单元的功能"><a href="#控制单元的功能" class="headerlink" title="控制单元的功能"></a>控制单元的功能</h1><h1 id="控制单元的设计"><a href="#控制单元的设计" class="headerlink" title="控制单元的设计"></a>控制单元的设计</h1>
           
         
       
