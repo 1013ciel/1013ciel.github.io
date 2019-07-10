@@ -398,7 +398,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-26 23:42:31" itemprop="dateModified" datetime="2019-05-26T23:42:31+08:00">2019-05-26</time>
+                <time title="修改时间：2019-05-27 23:22:13" itemprop="dateModified" datetime="2019-05-27T23:22:13+08:00">2019-05-27</time>
               
             
           </span>
@@ -452,222 +452,54 @@
       
         
           
-            <h1 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>1.1 计算机系统的软硬件</strong></p>
-<ul>
-<li><strong>硬件</strong>：计算机的实体：主机，外设</li>
-<li><p><strong>软件</strong>：由各类具有特殊功能的信息（程序）组成</p>
-<p><em>软件</em></p>
-</li>
-<li>系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……）</li>
-<li>应用软件：按任务需要编制成的各种程序</li>
-</ul>
-<p><strong>1.2计算机解题过程</strong><br><img src="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png" alt="计算机解题过程"></p>
-<p><strong>计算机系统的层次结构</strong></p>
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>高级语言</td>
-<td>虚拟机器M4</td>
-<td>软件</td>
-<td>用编译程序翻译成汇编语言程序</td>
-</tr>
-<tr>
-<td>汇编语言</td>
-<td>虚拟机器M3</td>
-<td>软件</td>
-<td>用汇编程序翻译成机器语言程序</td>
-</tr>
-<tr>
-<td>操作系统</td>
-<td>虚拟机器M2</td>
-<td>软件</td>
-<td>用机器语言解释操作系统</td>
-</tr>
-<tr>
-<td>机器语言</td>
-<td>实际机器M1</td>
-<td>硬件</td>
-<td>用微指令解释机器指令</td>
-</tr>
-<tr>
-<td>微指令系统</td>
-<td>微程序机器M0</td>
-<td>硬件</td>
-<td>由硬盘直接执行微指令</td>
-</tr>
-</tbody>
-</table>
-<p><strong>计算机体系结构和计算机组成</strong></p>
-<ul>
-<li>计算机体系结构：程序员所见到的计算机系统的属性，概念性的结构与功能特性（指令系统、数据类型、寻址技术、I/O原理）</li>
-<li>计算机组成：实现计算机体系结构所体现的属性</li>
-</ul>
-<h2 id="计算机的基本组成"><a href="#计算机的基本组成" class="headerlink" title="计算机的基本组成"></a>计算机的基本组成</h2><h3 id="冯诺依曼计算机"><a href="#冯诺依曼计算机" class="headerlink" title="冯诺依曼计算机"></a>冯诺依曼计算机</h3><p><img src="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png" alt="冯诺依曼计算机"></p>
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>部件</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>运算器</td>
-<td>完成算术运算和逻辑运算，并将运算的中间结果暂存在运算器内</td>
-</tr>
-<tr>
-<td>2</td>
-<td>存储器</td>
-<td>存放数据和程序</td>
-</tr>
-<tr>
-<td>3</td>
-<td>控制器</td>
-<td>控制、指挥程序和数据的输入、运行以及处理运算结果</td>
-</tr>
-<tr>
-<td>4</td>
-<td>输入设备</td>
-<td>将信息转化成机器能识别的形式</td>
-</tr>
-<tr>
-<td>5</td>
-<td>输出设备</td>
-<td>将运算结果转化成人们熟悉的形式</td>
-</tr>
-</tbody>
-</table>
-<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
-<li>1.计算机由五大部分组成</li>
-<li>2.指令和数据以同等地位存于存储器，可按地址寻访</li>
-<li>3.指令和数据用二进制表示</li>
-<li>4.指令由操作码和地址码组成</li>
-<li>5.指令在存储器内按顺序存放</li>
-<li>6.以运算器为中心</li>
-</ul>
-<h3 id="计算机硬件框图"><a href="#计算机硬件框图" class="headerlink" title="计算机硬件框图"></a>计算机硬件框图</h3><p><img src="https://i.loli.net/2019/05/25/5ce936083b98919976.png" alt="存储器为中心"></p>
-<p><img src="https://i.loli.net/2019/05/25/5ce938ee923bd54889.png" alt="现代计算机硬件框图"></p>
-<h3 id="计算机工作步骤"><a href="#计算机工作步骤" class="headerlink" title="计算机工作步骤"></a>计算机工作步骤</h3><p>1.上机前</p>
-<ul>
-<li>建立数学模型</li>
-<li>确定计算方法</li>
-<li>编制解题程序</li>
-</ul>
-<p>2.计算机的解题过程</p>
-<p>！！没懂</p>
-<h2 id="计算机硬件的主要技术指标"><a href="#计算机硬件的主要技术指标" class="headerlink" title="计算机硬件的主要技术指标"></a>计算机硬件的主要技术指标</h2><ul>
-<li>1.机器字长：CPU一次能处理数据的位数，与CPU中的寄存器位数有关</li>
-<li>2.运算速度：（主频，吉普森法，MIPS，CPI，FLOPS）</li>
-<li>3.存储容量：存放二进制信息的总位数</li>
-</ul>
-<h1 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h1><h2 id="总线的基本概念"><a href="#总线的基本概念" class="headerlink" title="总线的基本概念"></a>总线的基本概念</h2><p>1.为什么要用总线？</p>
-<p>2.什么是总线？</p>
-<p>3.总线上信息的传送有哪些方式？串行、并行</p>
-<p>4.总线结构的计算机举例：</p>
-<p><img src="https://i.loli.net/2019/05/25/5ce943b6e9a5357784.png" alt="面向cpu的双总线结构框图"></p>
-<p><img src="https://i.loli.net/2019/05/25/5ce943fb1e96395783.png" alt="单总线结构框图"></p>
-<p><img src="https://i.loli.net/2019/05/25/5ce94435ca55751007.png" alt="以存储器为中心的双总线结构框图"></p>
-<h2 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h2><p>1.片内总线：芯片内部的总线</p>
-<p>2.系统总线：计算机各部件之间的信息传输线</p>
-<ul>
-<li>数据总线：双向，与机器字长，存储字长有关</li>
-<li>地址总线：单向，与存储地址，I/O地址有关</li>
-<li>控制总线：有出、有入</li>
-</ul>
-<p>3.通信总线：用于计算机系统之间或计算机系统与其他系统之间打的通信</p>
-<ul>
-<li>串行通信总线</li>
-<li>并行通信总线</li>
-</ul>
-<h2 id="总线特性及性能指标"><a href="#总线特性及性能指标" class="headerlink" title="总线特性及性能指标"></a>总线特性及性能指标</h2><h3 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h3><ul>
-<li>机械特性：尺寸、形状、管脚数以及排列顺序</li>
-<li>电气特性：传输方向和有效的电平范围</li>
-<li>功能特性：每根传输线的功能：地址，数据，控制</li>
-<li>时间特性：信号的时序关系</li>
-</ul>
-<h3 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h3><p>1.总线宽度：数据线的根数<br>2.标准传输率：每秒传输的最大字节数（MBps）<br>3.时钟同步/异步：同步、不同步<br>4.总线复用：地址线和数据线复用<br>5.信号线数：地址线，数据线，控制线的总和<br>6.总线控制方式：并发、自动、仲裁、逻辑、计数<br>7.其他指标：负载能力</p>
-<h2 id="总线结构"><a href="#总线结构" class="headerlink" title="总线结构"></a>总线结构</h2><p>1.单总线结构<br>  <img src="https://i.loli.net/2019/05/26/5cea90dc6b31a61619.png" alt="单总线结构"></p>
-<p>2.多总线结构</p>
-<ul>
-<li>双总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9137adb1352276.png" alt="TIM图片20190526211340.png"></li>
-<li>三总线结构<br><img src="https://i.loli.net/2019/05/26/5cea919d978a439107.png" alt="三总线结构"><br><img src="https://i.loli.net/2019/05/26/5cea925b512e624462.png" alt="三总线结构形式2"></li>
-<li>四总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9206ade5583221.png" alt="四总线结构"></li>
-</ul>
-<p>3.总线结构举例</p>
-<ul>
-<li>传统微型机总线结构<br><img src="https://i.loli.net/2019/05/26/5cea92c1a37dd15570.png" alt="TIM图片20190526212044.png"></li>
-<li>VL-BUS局部总线结构<br><img src="https://i.loli.net/2019/05/26/5cea930cf2fb880521.png" alt="TIM图片20190526212211.png"></li>
-<li>PCI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea934c1e70660914.png" alt="TIM图片20190526212315.png"></li>
-<li>多层CPI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea93903668f33425.png" alt="TIM图片20190526212420.png"></li>
-</ul>
-<h2 id="总线控制"><a href="#总线控制" class="headerlink" title="总线控制"></a>总线控制</h2><h3 id="总线判优控制"><a href="#总线判优控制" class="headerlink" title="总线判优控制"></a>总线判优控制</h3><p>1.基本概念</p>
-<ul>
-<li>主设备：对主线有控制权</li>
-<li>从设备：响应从主设备发来的总线命令</li>
-<li>总线判优控制<ul>
-<li>集中式<ul>
-<li>链式查询<br><img src="https://i.loli.net/2019/05/26/5cea94622856199019.png" alt="TIM图片20190526212754.png"></li>
-<li>计时器定时查询<br><img src="https://i.loli.net/2019/05/26/5cea94c03226088054.png" alt="TIM图片20190526212847.png"></li>
-<li>独立请求方式<br><img src="https://i.loli.net/2019/05/26/5cea94e07a75417095.png" alt="TIM图片20190526212951.png"></li>
-</ul>
-</li>
-<li>分布式</li>
-</ul>
-</li>
-</ul>
-<h3 id="总线通信控制"><a href="#总线通信控制" class="headerlink" title="总线通信控制"></a>总线通信控制</h3><p>1.目的：解决通信双方协调配合问题</p>
-<p>2.总线传输周期</p>
-<ul>
-<li>申请分配阶段：主模块申请，总线仲裁决定</li>
-<li>寻址阶段：主模块向从模块给出地址和命令</li>
-<li>传数阶段：主模块和从模块交换数据</li>
-<li>结束阶段：主模块撤销有关信息</li>
-</ul>
-<p>3.总线通信的四种方式</p>
-<ul>
-<li>同步通信：由统一时标控制数据传<ul>
-<li>同步式数据输入<br><img src="https://i.loli.net/2019/05/26/5cea9c49034f374748.png" alt="TIM图片20190526220134.png"></li>
-<li>同步式数据输出<br><img src="https://i.loli.net/2019/05/26/5cea9ca3a222967150.png" alt="TIM图片20190526220303.png"></li>
-</ul>
-</li>
-<li>异步通信：采用应答方式，没有公共时钟标准<br><img src="https://i.loli.net/2019/05/26/5cea9d02a0a8140010.png" alt="TIM图片20190526220443.png"></li>
-<li>半同步通信：同步、异步结合<ul>
-<li>同步：发送方用系统时钟前沿发信号，接收方用系统时钟后沿判断、识别</li>
-<li>允许不同速度的模块和谐工作，增加一条“等待”响应信号<br><img src="https://i.loli.net/2019/05/26/5cea9da3c14b049428.png" alt="TIM图片20190526220716.png"></li>
-</ul>
-</li>
-<li>分离式通信：充分挖掘系统总线每个瞬间的潜力，</li>
-</ul>
-<h1 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="存储器分类"><a href="#存储器分类" class="headerlink" title="存储器分类"></a>存储器分类</h3><p>1.按存储介质</p>
-<p>2.按存取方式</p>
-<p>3.按在计算机中的作用分类</p>
-<h3 id="存储器的层次结构"><a href="#存储器的层次结构" class="headerlink" title="存储器的层次结构"></a>存储器的层次结构</h3><p>1.存储器三个主要特性的关系<br><img src="https://i.loli.net/2019/05/26/5ceaa3b2d5d2224622.png" alt="TIM图片20190526223303.png"></p>
-<p>2.缓存-主存层次和主存-辅存层次<br><img src="https://i.loli.net/2019/05/26/5ceaa416bc95578697.png" alt="TIM图片20190526223449.png"></p>
-<h2 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h2><h3 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h3><p>1.主存的基本组成<br><img src="https://i.loli.net/2019/05/26/5ceaaeae1a0d131497.png" alt="TIM图片20190526231929.png"></p>
-<p>2.主存和CPU的联系<br><img src="https://i.loli.net/2019/05/26/5ceaaeec9388886955.png" alt="TIM图片20190526232106.png"></p>
-<p>3.主存中存储单元地址的分配<br><img src="https://i.loli.net/2019/05/26/5ceaaf343621110595.png" alt="TIM图片20190526232215.png"></p>
-<p>4.主存的技术指标</p>
-<ul>
-<li>存储容量</li>
-<li>存储速度<ul>
-<li>存取时间</li>
-<li>存取周期</li>
-</ul>
-</li>
-<li>存储器的带框</li>
-</ul>
-<h3 id="半导体存储芯片"><a href="#半导体存储芯片" class="headerlink" title="半导体存储芯片"></a>半导体存储芯片</h3><h3 id="随机存储器"><a href="#随机存储器" class="headerlink" title="随机存储器"></a>随机存储器</h3><h3 id="只读存储器（ROM）"><a href="#只读存储器（ROM）" class="headerlink" title="只读存储器（ROM）"></a>只读存储器（ROM）</h3><h3 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h3><h3 id="存储器的校验"><a href="#存储器的校验" class="headerlink" title="存储器的校验"></a>存储器的校验</h3><h3 id="提高访存速度的措施"><a href="#提高访存速度的措施" class="headerlink" title="提高访存速度的措施"></a>提高访存速度的措施</h3><h2 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h2><h3 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h3><h3 id="Cache-主存的地址映射"><a href="#Cache-主存的地址映射" class="headerlink" title="Cache-主存的地址映射"></a>Cache-主存的地址映射</h3><h3 id="替换算法"><a href="#替换算法" class="headerlink" title="替换算法"></a>替换算法</h3><h2 id="辅助存储器"><a href="#辅助存储器" class="headerlink" title="辅助存储器"></a>辅助存储器</h2><h1 id="输入输出系统"><a href="#输入输出系统" class="headerlink" title="输入输出系统"></a>输入输出系统</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><h2 id="外部设备"><a href="#外部设备" class="headerlink" title="外部设备"></a>外部设备</h2><h2 id="I-O接口"><a href="#I-O接口" class="headerlink" title="I/O接口"></a>I/O接口</h2><h2 id="程序查询方式"><a href="#程序查询方式" class="headerlink" title="程序查询方式"></a>程序查询方式</h2><h2 id="程序中断方式"><a href="#程序中断方式" class="headerlink" title="程序中断方式"></a>程序中断方式</h2><h2 id="DMA方式"><a href="#DMA方式" class="headerlink" title="DMA方式"></a>DMA方式</h2><h1 id="计算机的运算方法"><a href="#计算机的运算方法" class="headerlink" title="计算机的运算方法"></a>计算机的运算方法</h1><h2 id="无符号数和有符号数"><a href="#无符号数和有符号数" class="headerlink" title="无符号数和有符号数"></a>无符号数和有符号数</h2><h2 id="数的定点表示和浮点表示"><a href="#数的定点表示和浮点表示" class="headerlink" title="数的定点表示和浮点表示"></a>数的定点表示和浮点表示</h2><h2 id="定点运算"><a href="#定点运算" class="headerlink" title="定点运算"></a>定点运算</h2><h2 id="浮点四则运算"><a href="#浮点四则运算" class="headerlink" title="浮点四则运算"></a>浮点四则运算</h2><h2 id="算术逻辑单元"><a href="#算术逻辑单元" class="headerlink" title="算术逻辑单元"></a>算术逻辑单元</h2><h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h2 id="机器指令"><a href="#机器指令" class="headerlink" title="机器指令"></a>机器指令</h2><h2 id="操作数类型和操作类型"><a href="#操作数类型和操作类型" class="headerlink" title="操作数类型和操作类型"></a>操作数类型和操作类型</h2><h2 id="寻址方式"><a href="#寻址方式" class="headerlink" title="寻址方式"></a>寻址方式</h2><h2 id="指令格式举例"><a href="#指令格式举例" class="headerlink" title="指令格式举例"></a>指令格式举例</h2><h2 id="RISC技术"><a href="#RISC技术" class="headerlink" title="RISC技术"></a>RISC技术</h2><h1 id="cpu的结构和功能"><a href="#cpu的结构和功能" class="headerlink" title="cpu的结构和功能"></a>cpu的结构和功能</h1><h2 id="CPU的结构"><a href="#CPU的结构" class="headerlink" title="CPU的结构"></a>CPU的结构</h2><h2 id="指令周期"><a href="#指令周期" class="headerlink" title="指令周期"></a>指令周期</h2><h2 id="指令流水"><a href="#指令流水" class="headerlink" title="指令流水"></a>指令流水</h2><h2 id="中断系统"><a href="#中断系统" class="headerlink" title="中断系统"></a>中断系统</h2><h1 id="控制单元的功能"><a href="#控制单元的功能" class="headerlink" title="控制单元的功能"></a>控制单元的功能</h1><h2 id="操作命令的分析"><a href="#操作命令的分析" class="headerlink" title="操作命令的分析"></a>操作命令的分析</h2><h2 id="操作单元的功能"><a href="#操作单元的功能" class="headerlink" title="操作单元的功能"></a>操作单元的功能</h2><h1 id="控制单元的设计"><a href="#控制单元的设计" class="headerlink" title="控制单元的设计"></a>控制单元的设计</h1><h2 id="组合逻辑设计"><a href="#组合逻辑设计" class="headerlink" title="组合逻辑设计"></a>组合逻辑设计</h2><h2 id="微程序设计"><a href="#微程序设计" class="headerlink" title="微程序设计"></a>微程序设计</h2>
+            <p>
+              #思维框图j 硬件
+
+外设
+输入设备
+输出设备
+
+
+主机
+主存
+存储体
+MAR
+其他
+
+
+CPU
+运算器
+ALU
+寄存器
+
+
+控制器
+CU
+IR
+PC
+
+
+
+
+
+
+
+计算机系统简介1.1 计算机系统的软硬件
+
+硬件：计算机的实体：主机，外设
+软件：由各类具有特殊功能的信息（程序）组成
+系统软件：用来
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/24/计算机组成原理/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -838,12 +670,23 @@
       
         
           
-            <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.java是大小写敏感的，Java与java不一样</p>
-<p>2.类名首字母应该大写，如果类名有多个单词组成，单词的首字母应该大写</p>
-<p>3.所有的方法名都应该以小写字母开头，如果方法名包含多个单词，则后面的单词首字母大写</p>
-<p>4.源文件名必须与类名</p>
+            <p>
+              注意事项1.java是大小写敏感的，Java与java不一样
+2.类名首字母应该大写，如果类名有多个单词组成，单词的首字母应该大写
+3.所有的方法名都应该以小写字母开头，如果方法名包含多个单词，则后面的单词首字母大写
+4.源文件名必须与类名
 
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/04/06/java的基础语法/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1014,17 +857,28 @@
       
         
           
-            <h2 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h2><p><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">下载地址</a></p>
-<p>选择自己需要的版本下载即可(x86适用于32位系统，x64适用于64位系统)</p>
-<p>安装JDK</p>
-<p>打开cmd检查是否安装成功</p>
-<p><img src="https://i.loli.net/2019/04/06/5ca85e1733bc8.png" alt="cmd"></p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>右键“我的电脑”-高级系统设置-环境变量<br><img src="https://i.loli.net/2019/04/06/5ca8602c9b07a.png" alt="环境变量"><br>选择系统变量中的变量Path，添加jdk路径<br><img src="https://i.loli.net/2019/04/06/5ca8613467894.png" alt="jdk路径"></p>
-<h2 id="安装eclipse"><a href="#安装eclipse" class="headerlink" title="安装eclipse"></a>安装eclipse</h2><p><a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener">下载地址</a></p>
-<p><img src="https://i.loli.net/2019/04/06/5ca865c7d5205.png" alt="版本"></p>
-<p>解压之后打开应用程序就可以啦</p>
+            <p>
+              下载JDK下载地址
+选择自己需要的版本下载即可(x86适用于32位系统，x64适用于64位系统)
+安装JDK
+打开cmd检查是否安装成功
 
+配置环境右键“我的电脑”-高级系统设置-环境变量选择系统变量中的变量Path，添加jdk路径
+安装eclipse下载地址
+
+解压之后打开应用程序就可以啦
+
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/04/06/java的安装/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1195,10 +1049,20 @@
       
         
           
-            <p>老师的示例代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;stdio.h&quot;</span><br><span class="line">#include &quot;string.h&quot;</span><br><span class="line"></span><br><span class="line">int A[10]=&#123;7,2,6,4,5&#125;;//假设的每个集装箱的重量</span><br><span class="line">int n=5;</span><br><span class="line">int ans[10];//表示集装箱的状态，0表示不装，1表示装载</span><br><span class="line">int maxw=10;//假设船能承受的最大重量</span><br><span class="line">int goodvalue=-1;</span><br><span class="line">int goodpath[10]=&#123;0&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">  int i=0,j;</span><br><span class="line">  for(i=0;i&lt;n;i++)ans[i]=-1;</span><br><span class="line">  i=0;</span><br><span class="line">  while (i&gt;=0) &#123;</span><br><span class="line">    if(i==n)</span><br><span class="line">    &#123;</span><br><span class="line">      int sum=0;</span><br><span class="line">      for(j=0;j&lt;n;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">      if(sum&lt;=maxw&amp;&amp;sum&gt;goodvalue)&#123;</span><br><span class="line">        goodvalue=sum;</span><br><span class="line">        memcpy(goodpath,ans,4*n);</span><br><span class="line">      &#125;</span><br><span class="line">      i--;continue;</span><br><span class="line">    &#125;</span><br><span class="line">    int sum=0;</span><br><span class="line">    for(j=0;j&lt;i;j++)if(ans[j]&gt;0)sum+=A[j];</span><br><span class="line">    if(sum&gt;maxw)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line">    for(j=i;j&lt;n;j++)sum+=A[j];</span><br><span class="line">    if(sum&lt;goodvalue)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    //处理第i个物品</span><br><span class="line">    ans[i]++;</span><br><span class="line">    if(ans[i]==2)&#123;ans[i]=-1;i--;continue;&#125;</span><br><span class="line"></span><br><span class="line">    i++;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;answer=%d\n&quot;,goodvalue);</span><br><span class="line">  for(i=0;i&lt;n;i++)printf(&quot;%d\n&quot;,goodpath[i] );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+            <p>
+              老师的示例代码
+#include &quot;stdio.h&quot;#include &quot;string.h&quot;int A[10]=&#123;7,2,6,4,5&#125;;//假设的每个集装箱的重量int n=5;int ans[10];//表示集装箱的状态，0表示不装，1表示
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/30/装载问题/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1357,40 +1221,33 @@
       
         
           
-            <h1 id="测试文档"><a href="#测试文档" class="headerlink" title="测试文档"></a>测试文档</h1><p><strong>加粗</strong></p>
-<p><em>斜体</em></p>
-<p><del>删除线</del></p>
-<p><code>#include&lt;stdio.h&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<ul>
-<li>第一项</li>
-<li>第二项</li>
-</ul>
-<p><a href="http://github.com" target="_blank" rel="noopener">github</a></p>
-<h1 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h1><p>$$和[形式都无法正常显示，正在寻找合适的语句</p>
-<p>$$\sum_{i=0}^{n}F\left ( x_{i} \right )$$</p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://i.loli.net/2019/03/29/5c9e088082b92.jpg" alt="qaq"></p>
-<h2 id="表格编辑"><a href="#表格编辑" class="headerlink" title="表格编辑"></a>表格编辑</h2><table>
-<thead>
-<tr>
-<th>name</th>
-<th>Age</th>
-<th>number</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>mary</td>
-<td>19</td>
-<td>12345</td>
-</tr>
-</tbody>
-</table>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2>
+            <p>
+              测试文档加粗
+斜体
+删除线
+#include&lt;stdio.h&gt;
+#include&lt;stdio.h&gt;int main
+
+引用
+
+
+第一项
+第二项
+
+github
+数学公式$$和[形式都无法正常显示，正在寻找合适的语句
+$$\sum_{i=0}^{n}F\left ( x_{i}
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1561,14 +1418,20 @@
       
         
           
-            <p><strong>回溯法</strong>(Back Tracking  Algorithm)与<strong>分支限界法</strong>（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。</p>
-<h2 id="回溯法"><a href="#回溯法" class="headerlink" title="回溯法"></a>回溯法</h2><p>也称试探法，可以把它看成是一个在约束条件下对解空间树进行深度优先搜索的过程，并在搜索过程中剪去那些不满足条件的分支。当用回溯法搜索到解空间树的某个结点时，如果发现当前路径不满足约束条件或不是历史最优时，则放弃对该结点的子树的搜索，并逐层向其祖先结点返回。否则，进入该结点的子树，继续进行深度优先搜索。实质上，这是一个先根遍历解空间树的过程，只是这个棵树不是遍历前预先建立的，而是隐含在遍历过程当中的。</p>
-<p><em>相似思想：图的深度优先搜索，二叉树的后序遍历</em></p>
-<p>回溯法的基本行为是搜索，搜索过程使用剪枝函数来为了避免无效的搜索。剪枝函数包括两类：1. 使用约束函数，剪去不满足约束条件的路径；2.使用限界函数，剪去不能得到最优解的路径。<br><a href="https://blog.csdn.net/weiyuefei/article/details/79316653" target="_blank" rel="noopener">参考博客</a></p>
-<h2 id="分支限界法"><a href="#分支限界法" class="headerlink" title="分支限界法"></a>分支限界法</h2><p>以最小代价优先的方式在解空间树上进行搜索，它可以找出满足问题约束的一个可行解，或者是从满足约束条件的可行解中找出一个使得目标函数达到极值的最优解。这里的可行解在搜索树中表现为一条由根到叶子结点的路径，这条路径上权值的和为可行解的值。其中，最优解就是使可行解的值达到最优的那条路径。分支限界算法的<strong>核心思想</strong>就是增加更多的约束条件，剪掉更多的分支，当对当前的树结点进行扩展时，一次性产生其所有儿子结点，并抛弃那些不可能产生可行解或最优解的结点，即剪枝；对于留下的儿子结点，计算一个函数值（限界），然后选取一个最有利的结点继续进行扩展，使得搜索朝着最优解的分支推进。重复这个过程直到找到最优解或没有可扩展的结点。</p>
-<p><em>相似思想：图的广度优先算的，二叉树的层序遍历</em></p>
-
+            <p>
+              回溯法(Back Tracking  Algorithm)与分支限界法（Branch and Bound Algorithm）都是基本的算法设计策略，属于树的搜索技术的范畴。在使用这两种算法求解问题前，均需要把解空间规划成一棵解空间树，并且在求解过程中使用剪枝策略来提高搜索效率。
+回溯法也称试探法，
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/回溯法与分支限界法/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1705,8 +1568,19 @@
       
         
           
-            
+            <p>
+              
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/旅行商/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1877,9 +1751,19 @@
       
         
           
-            <h2 id="题目介绍"><a href="#题目介绍" class="headerlink" title="题目介绍"></a>题目介绍</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>最简单-全排列<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int n=8;//共8行</span><br><span class="line">int ans[100]=&#123;0&#125;;</span><br><span class="line">int count=0;</span><br><span class="line"></span><br><span class="line">int isok(int i)&#123;</span><br><span class="line">    int m;</span><br><span class="line">    for(m=0;m&lt;i;m++)//判断前i行是否符合条件</span><br><span class="line">    &#123;</span><br><span class="line">        if(ans[m]==ans[i])return 0;//同一行</span><br><span class="line">        if(m-ans[m]==i-ans[i])return 0;//同一斜线</span><br><span class="line">        if(m+ans[m]==i+ans[i])return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    return 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int showAnswer()</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    for(i=0;i&lt;n;i++)</span><br><span class="line">        printf(&quot;%d &quot;,ans[i]);</span><br><span class="line">    puts(&quot;&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int fun(int i)//递归函数，第i行</span><br><span class="line">&#123;</span><br><span class="line">    if(i==n)&#123;////递归完了n行就输出所有结果</span><br><span class="line">        showAnswer();</span><br><span class="line">        count++;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int j;</span><br><span class="line">    for(j=0;j&lt;n;j++)//从第j列开始</span><br><span class="line">    &#123;</span><br><span class="line">        ans[i]=j;//第i行的皇后放在第j列</span><br><span class="line">        if(isok(i)==1)//如果第i层的皇后位置符合条件</span><br><span class="line">            fun(i+1);//进入递归</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    fun(0);//从第0行开始</span><br><span class="line">    printf(&quot;count=%d\n&quot;,count);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+            <p>
+              题目介绍代码最简单-全排列#include&lt;stdio.h&gt;int n=8;//共8行int ans[100]=&#123;0&#125;;int count=0;int isok(int i)&#123;    int m;    for(m=0;m&lt;i;m++)//判断前i行是
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/n皇后/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2050,11 +1934,22 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给定n种物品和一背包。物品i的重量是wi，其价值为pi，背包的容量为C。问应如何选择装入背包的物品，使得装入背包中物品的总价值最大?</p>
-<p>0-1背包问题，即限定每种物品只能取0个或1个</p>
-<p>回溯递归法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+            <p>
+              问题描述给定n种物品和一背包。物品i的重量是wi，其价值为pi，背包的容量为C。问应如何选择装入背包的物品，使得装入背包中物品的总价值最大?
+0-1背包问题，即限定每种物品只能取0个或1个
+回溯递归法
 
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/28/背包问题/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2225,10 +2120,21 @@
       
         
           
-            <p>刚开始玩博客，很多地方都不熟悉，故做个简单的记录，主要记录自己遇到的一些不太懂的问题和语法吧。</p>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>公式的代码在atom上预览效果是正常的，可是上传到博客里无法显示公式，只是一串代码。<br>暂时准备用图片来代替<br><img src="https://i.loli.net/2019/03/29/5c9da142c19aa.jpg" alt="1"></p>
+            <p>
+              刚开始玩博客，很多地方都不熟悉，故做个简单的记录，主要记录自己遇到的一些不太懂的问题和语法吧。
+数学公式公式的代码在atom上预览效果是正常的，可是上传到博客里无法显示公式，只是一串代码。暂时准备用图片来代替
 
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/28/关于hexo/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
