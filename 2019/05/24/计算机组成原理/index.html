@@ -1,21 +1,108 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content>
-    <title>计算机组成原理 | ciel的博客</title>
 
-    <!-- Open Graph -->
-    <meta name="description" content="#&amp;#x601D;&amp;#x7EF4;&amp;#x6846;&amp;#x56FE;j &amp;#x786C;&amp;#x4EF6;  &amp;#x5916;&amp;#x8BBE; &amp;#x8F93;&amp;#x5165;&amp;#x8BBE;&amp;#x5907; &amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x5907;   &amp;#x4E3B;&amp;#x673A; &amp;#x4E3B;&amp;#x5B58; &amp;#x5B58;&amp;#x50A8;&amp;#x4F53; MAR">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="#思维框图j 硬件  外设 输入设备 输出设备   主机 主存 存储体 MAR 其他   CPU 运算器 ALU 寄存器   控制器 CU IR PC        计算机系统简介1.1 计算机系统的软硬件  硬件：计算机的实体：主机，外设 软件：由各类具有特殊功能的信息（程序）组成 系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……） 应用软件：按任务需要编制成的各种程序">
 <meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机组成原理">
 <meta property="og:url" content="http://1013ciel.github.io/2019/05/24/计算机组成原理/index.html">
 <meta property="og:site_name" content="ciel的博客">
-<meta property="og:description" content="#&amp;#x601D;&amp;#x7EF4;&amp;#x6846;&amp;#x56FE;j &amp;#x786C;&amp;#x4EF6;  &amp;#x5916;&amp;#x8BBE; &amp;#x8F93;&amp;#x5165;&amp;#x8BBE;&amp;#x5907; &amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x5907;   &amp;#x4E3B;&amp;#x673A; &amp;#x4E3B;&amp;#x5B58; &amp;#x5B58;&amp;#x50A8;&amp;#x4F53; MAR">
+<meta property="og:description" content="#思维框图j 硬件  外设 输入设备 输出设备   主机 主存 存储体 MAR 其他   CPU 运算器 ALU 寄存器   控制器 CU IR PC        计算机系统简介1.1 计算机系统的软硬件  硬件：计算机的实体：主机，外设 软件：由各类具有特殊功能的信息（程序）组成 系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……） 应用软件：按任务需要编制成的各种程序">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png">
 <meta property="og:image" content="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png">
@@ -57,150 +144,380 @@
 <meta property="og:updated_time" content="2019-05-27T15:22:13.118Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机组成原理">
-<meta name="twitter:description" content="#&amp;#x601D;&amp;#x7EF4;&amp;#x6846;&amp;#x56FE;j &amp;#x786C;&amp;#x4EF6;  &amp;#x5916;&amp;#x8BBE; &amp;#x8F93;&amp;#x5165;&amp;#x8BBE;&amp;#x5907; &amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x5907;   &amp;#x4E3B;&amp;#x673A; &amp;#x4E3B;&amp;#x5B58; &amp;#x5B58;&amp;#x50A8;&amp;#x4F53; MAR">
+<meta name="twitter:description" content="#思维框图j 硬件  外设 输入设备 输出设备   主机 主存 存储体 MAR 其他   CPU 运算器 ALU 寄存器   控制器 CU IR PC        计算机系统简介1.1 计算机系统的软硬件  硬件：计算机的实体：主机，外设 软件：由各类具有特殊功能的信息（程序）组成 系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……） 应用软件：按任务需要编制成的各种程序">
 <meta name="twitter:image" content="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png">
 
-    <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "email": "mailto:",
-  "image": "",
-  "name": "ciel",
-  "url": "http://1013ciel.github.io"
-}
-</script>
-    <script>
-    var algoliaEnabled = false;
-    
+
+
+
+
+
+  <link rel="canonical" href="http://1013ciel.github.io/2019/05/24/计算机组成原理/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
 </script>
 
-    
+  <title>计算机组成原理 | ciel的博客</title>
+  
 
-    
-    
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    
-    
-    
-        <!-- stylesheets list from config.yml -->
-        
-        <link rel="stylesheet" href="/css/aloha.css">
-        
-        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
-        
-        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
-<body id="body" style="margin-bottom: 0;" class="pushable">
 
-    <div class="ui top fixed menu">
-        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ciel的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+    
+    
+  </div>
 
-    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-    <div id="sidebar-top">
-        <div class="content">
-            <h3>ciel的博客</h3>
-        </div>
-    </div>
-    <div class="ui container sidebar-card">
-    <div class="ui people shape content">
-        <div class="active side">
-            <div class="ui card">
-                <div class="image">
-                    <img class="ui medium bordered image" src="/images/avatar.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">ciel</a>
-                    
-                </div>
-                <div class="extra content">
-                    <div class="ui list">
-                        
-                        
-                    </div>
 
-                </div>
-                <div class="extra content">
-                    <div class="ui list">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
 
 
 </div>
-
-    
-    
-
-    
-
-    
-    <a href="/index.html" class="item">
-        <i class="home icon"></i>
-        首页
-    </a>
+    </header>
 
     
 
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-</div>
 
-    <div class="pusher body-content">
-        <div id="content" class="ui main container">
-            <!--<div class="ui one column grid">-->
-                <!--<div class="column">-->
-                    <!--<div class="ui main container">-->
-                        <div id="post-计算机组成原理" class="ui main container article-type-post">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://1013ciel.github.io/2019/05/24/计算机组成原理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ciel">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ciel的博客">
+    </span>
 
     
+      <header class="post-header">
 
-    <div class="ui divided grid">
+        
+        
+          <h1 class="post-title" itemprop="name headline">计算机组成原理
 
-        <div class="two column row" id="article-content">
+              
+            
+          </h1>
+        
 
-            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-24 21:42:39" itemprop="dateCreated datePublished" datetime="2019-05-24T21:42:39+08:00">2019-05-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
                 
 
-<h1 class="ui header">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-27 23:22:13" itemprop="dateModified" datetime="2019-05-27T23:22:13+08:00">2019-05-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/计算机组成原理/" itemprop="url" rel="index"><span itemprop="name">计算机组成原理</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-    计算机组成原理
-</h1>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
 
-                <div class="article-inner">
-
-                    <div class="article-entry" itemprop="articleBody">
-                        
-                        <p>#&#x601D;&#x7EF4;&#x6846;&#x56FE;<br>j &#x786C;&#x4EF6;</p>
-<ul class="ui list">
-<li>&#x5916;&#x8BBE;<ul>
-<li>&#x8F93;&#x5165;&#x8BBE;&#x5907;</li>
-<li>&#x8F93;&#x51FA;&#x8BBE;&#x5907;</li>
+      
+        <p>#思维框图<br>j 硬件</p>
+<ul>
+<li>外设<ul>
+<li>输入设备</li>
+<li>输出设备</li>
 </ul>
 </li>
-<li>&#x4E3B;&#x673A;<ul>
-<li>&#x4E3B;&#x5B58;<ul>
-<li>&#x5B58;&#x50A8;&#x4F53;</li>
+<li>主机<ul>
+<li>主存<ul>
+<li>存储体</li>
 <li>MAR</li>
-<li>&#x5176;&#x4ED6;</li>
+<li>其他</li>
 </ul>
 </li>
 <li>CPU<ul>
-<li>&#x8FD0;&#x7B97;&#x5668;<ul>
+<li>运算器<ul>
 <li>ALU</li>
-<li>&#x5BC4;&#x5B58;&#x5668;</li>
+<li>寄存器</li>
 </ul>
 </li>
-<li>&#x63A7;&#x5236;&#x5668;<ul>
+<li>控制器<ul>
 <li>CU</li>
 <li>IR</li>
 <li>PC</li>
@@ -211,17 +528,17 @@
 </ul>
 </li>
 </ul>
-<h1 id="&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;"></a>&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;</h1><h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p><strong>1.1 &#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x8F6F;&#x786C;&#x4EF6;</strong></p>
-<ul class="ui list">
-<li><strong>&#x786C;&#x4EF6;</strong>&#xFF1A;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x5B9E;&#x4F53;&#xFF1A;&#x4E3B;&#x673A;&#xFF0C;&#x5916;&#x8BBE;</li>
-<li><strong>&#x8F6F;&#x4EF6;</strong>&#xFF1A;&#x7531;&#x5404;&#x7C7B;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x529F;&#x80FD;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x7A0B;&#x5E8F;&#xFF09;&#x7EC4;&#x6210;<ul>
-<li>&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#xFF1A;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x6574;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#xFF08;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x670D;&#x52A1;&#x6027;&#x7A0B;&#x5E8F;&#x2026;&#x2026;&#xFF09;</li>
-<li>&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF1A;&#x6309;&#x4EFB;&#x52A1;&#x9700;&#x8981;&#x7F16;&#x5236;&#x6210;&#x7684;&#x5404;&#x79CD;&#x7A0B;&#x5E8F;</li>
+<h1 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>1.1 计算机系统的软硬件</strong></p>
+<ul>
+<li><strong>硬件</strong>：计算机的实体：主机，外设</li>
+<li><strong>软件</strong>：由各类具有特殊功能的信息（程序）组成<ul>
+<li>系统软件：用来管理整个计算机系统（语言处理程序，操作系统，服务性程序……）</li>
+<li>应用软件：按任务需要编制成的各种程序</li>
 </ul>
 </li>
 </ul>
-<p><strong>1.2&#x8BA1;&#x7B97;&#x673A;&#x89E3;&#x9898;&#x8FC7;&#x7A0B;</strong><br><a class="magnific-img" href="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png"><img src="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png" alt="&#x8BA1;&#x7B97;&#x673A;&#x89E3;&#x9898;&#x8FC7;&#x7A0B;" class="ui centered image"></a></p>
-<p><strong>&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</strong></p>
+<p><strong>1.2计算机解题过程</strong><br><img src="https://i.loli.net/2019/05/24/5ce7fd16dd15b11429.png" alt="计算机解题过程"></p>
+<p><strong>计算机系统的层次结构</strong></p>
 <table>
 <thead>
 <tr>
@@ -233,325 +550,681 @@
 </thead>
 <tbody>
 <tr>
-<td>&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;</td>
-<td>&#x865A;&#x62DF;&#x673A;&#x5668;M4</td>
-<td>&#x8F6F;&#x4EF6;</td>
-<td>&#x7528;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x7FFB;&#x8BD1;&#x6210;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x7A0B;&#x5E8F;</td>
+<td>高级语言</td>
+<td>虚拟机器M4</td>
+<td>软件</td>
+<td>用编译程序翻译成汇编语言程序</td>
 </tr>
 <tr>
-<td>&#x6C47;&#x7F16;&#x8BED;&#x8A00;</td>
-<td>&#x865A;&#x62DF;&#x673A;&#x5668;M3</td>
-<td>&#x8F6F;&#x4EF6;</td>
-<td>&#x7528;&#x6C47;&#x7F16;&#x7A0B;&#x5E8F;&#x7FFB;&#x8BD1;&#x6210;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x7A0B;&#x5E8F;</td>
+<td>汇编语言</td>
+<td>虚拟机器M3</td>
+<td>软件</td>
+<td>用汇编程序翻译成机器语言程序</td>
 </tr>
 <tr>
-<td>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</td>
-<td>&#x865A;&#x62DF;&#x673A;&#x5668;M2</td>
-<td>&#x8F6F;&#x4EF6;</td>
-<td>&#x7528;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x89E3;&#x91CA;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</td>
+<td>操作系统</td>
+<td>虚拟机器M2</td>
+<td>软件</td>
+<td>用机器语言解释操作系统</td>
 </tr>
 <tr>
-<td>&#x673A;&#x5668;&#x8BED;&#x8A00;</td>
-<td>&#x5B9E;&#x9645;&#x673A;&#x5668;M1</td>
-<td>&#x786C;&#x4EF6;</td>
-<td>&#x7528;&#x5FAE;&#x6307;&#x4EE4;&#x89E3;&#x91CA;&#x673A;&#x5668;&#x6307;&#x4EE4;</td>
+<td>机器语言</td>
+<td>实际机器M1</td>
+<td>硬件</td>
+<td>用微指令解释机器指令</td>
 </tr>
 <tr>
-<td>&#x5FAE;&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;</td>
-<td>&#x5FAE;&#x7A0B;&#x5E8F;&#x673A;&#x5668;M0</td>
-<td>&#x786C;&#x4EF6;</td>
-<td>&#x7531;&#x786C;&#x76D8;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x5FAE;&#x6307;&#x4EE4;</td>
+<td>微指令系统</td>
+<td>微程序机器M0</td>
+<td>硬件</td>
+<td>由硬盘直接执行微指令</td>
 </tr>
 </tbody>
 </table>
-<p><strong>&#x8BA1;&#x7B97;&#x673A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x548C;&#x8BA1;&#x7B97;&#x673A;&#x7EC4;&#x6210;</strong></p>
-<ul class="ui list">
-<li>&#x8BA1;&#x7B97;&#x673A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#xFF1A;&#x7A0B;&#x5E8F;&#x5458;&#x6240;&#x89C1;&#x5230;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6982;&#x5FF5;&#x6027;&#x7684;&#x7ED3;&#x6784;&#x4E0E;&#x529F;&#x80FD;&#x7279;&#x6027;&#xFF08;&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;&#x3001;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3001;&#x5BFB;&#x5740;&#x6280;&#x672F;&#x3001;I/O&#x539F;&#x7406;&#xFF09;</li>
-<li>&#x8BA1;&#x7B97;&#x673A;&#x7EC4;&#x6210;&#xFF1A;&#x5B9E;&#x73B0;&#x8BA1;&#x7B97;&#x673A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x6240;&#x4F53;&#x73B0;&#x7684;&#x5C5E;&#x6027;</li>
+<p><strong>计算机体系结构和计算机组成</strong></p>
+<ul>
+<li>计算机体系结构：程序员所见到的计算机系统的属性，概念性的结构与功能特性（指令系统、数据类型、寻址技术、I/O原理）</li>
+<li>计算机组成：实现计算机体系结构所体现的属性</li>
 </ul>
-<h2 id="&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;"></a>&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;</h2><h3 id="&#x51AF;&#x8BFA;&#x4F9D;&#x66FC;&#x8BA1;&#x7B97;&#x673A;"><a href="#&#x51AF;&#x8BFA;&#x4F9D;&#x66FC;&#x8BA1;&#x7B97;&#x673A;" class="headerlink" title="&#x51AF;&#x8BFA;&#x4F9D;&#x66FC;&#x8BA1;&#x7B97;&#x673A;"></a>&#x51AF;&#x8BFA;&#x4F9D;&#x66FC;&#x8BA1;&#x7B97;&#x673A;</h3><p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png"><img src="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png" alt="&#x51AF;&#x8BFA;&#x4F9D;&#x66FC;&#x8BA1;&#x7B97;&#x673A;" class="ui centered image"></a></p>
+<h2 id="计算机的基本组成"><a href="#计算机的基本组成" class="headerlink" title="计算机的基本组成"></a>计算机的基本组成</h2><h3 id="冯诺依曼计算机"><a href="#冯诺依曼计算机" class="headerlink" title="冯诺依曼计算机"></a>冯诺依曼计算机</h3><p><img src="https://i.loli.net/2019/05/25/5ce8ffe1d6e2214087.png" alt="冯诺依曼计算机"></p>
 <table>
 <thead>
 <tr>
-<th>&#x5E8F;&#x53F7;</th>
-<th>&#x90E8;&#x4EF6;</th>
-<th>&#x529F;&#x80FD;</th>
+<th>序号</th>
+<th>部件</th>
+<th>功能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>&#x8FD0;&#x7B97;&#x5668;</td>
-<td>&#x5B8C;&#x6210;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#xFF0C;&#x5E76;&#x5C06;&#x8FD0;&#x7B97;&#x7684;&#x4E2D;&#x95F4;&#x7ED3;&#x679C;&#x6682;&#x5B58;&#x5728;&#x8FD0;&#x7B97;&#x5668;&#x5185;</td>
+<td>运算器</td>
+<td>完成算术运算和逻辑运算，并将运算的中间结果暂存在运算器内</td>
 </tr>
 <tr>
 <td>2</td>
-<td>&#x5B58;&#x50A8;&#x5668;</td>
-<td>&#x5B58;&#x653E;&#x6570;&#x636E;&#x548C;&#x7A0B;&#x5E8F;</td>
+<td>存储器</td>
+<td>存放数据和程序</td>
 </tr>
 <tr>
 <td>3</td>
-<td>&#x63A7;&#x5236;&#x5668;</td>
-<td>&#x63A7;&#x5236;&#x3001;&#x6307;&#x6325;&#x7A0B;&#x5E8F;&#x548C;&#x6570;&#x636E;&#x7684;&#x8F93;&#x5165;&#x3001;&#x8FD0;&#x884C;&#x4EE5;&#x53CA;&#x5904;&#x7406;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;</td>
+<td>控制器</td>
+<td>控制、指挥程序和数据的输入、运行以及处理运算结果</td>
 </tr>
 <tr>
 <td>4</td>
-<td>&#x8F93;&#x5165;&#x8BBE;&#x5907;</td>
-<td>&#x5C06;&#x4FE1;&#x606F;&#x8F6C;&#x5316;&#x6210;&#x673A;&#x5668;&#x80FD;&#x8BC6;&#x522B;&#x7684;&#x5F62;&#x5F0F;</td>
+<td>输入设备</td>
+<td>将信息转化成机器能识别的形式</td>
 </tr>
 <tr>
 <td>5</td>
-<td>&#x8F93;&#x51FA;&#x8BBE;&#x5907;</td>
-<td>&#x5C06;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x8F6C;&#x5316;&#x6210;&#x4EBA;&#x4EEC;&#x719F;&#x6089;&#x7684;&#x5F62;&#x5F0F;</td>
+<td>输出设备</td>
+<td>将运算结果转化成人们熟悉的形式</td>
 </tr>
 </tbody>
 </table>
-<h4 id="&#x7279;&#x70B9;"><a href="#&#x7279;&#x70B9;" class="headerlink" title="&#x7279;&#x70B9;"></a>&#x7279;&#x70B9;</h4><ul class="ui list">
-<li>1.&#x8BA1;&#x7B97;&#x673A;&#x7531;&#x4E94;&#x5927;&#x90E8;&#x5206;&#x7EC4;&#x6210;</li>
-<li>2.&#x6307;&#x4EE4;&#x548C;&#x6570;&#x636E;&#x4EE5;&#x540C;&#x7B49;&#x5730;&#x4F4D;&#x5B58;&#x4E8E;&#x5B58;&#x50A8;&#x5668;&#xFF0C;&#x53EF;&#x6309;&#x5730;&#x5740;&#x5BFB;&#x8BBF;</li>
-<li>3.&#x6307;&#x4EE4;&#x548C;&#x6570;&#x636E;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;</li>
-<li>4.&#x6307;&#x4EE4;&#x7531;&#x64CD;&#x4F5C;&#x7801;&#x548C;&#x5730;&#x5740;&#x7801;&#x7EC4;&#x6210;</li>
-<li>5.&#x6307;&#x4EE4;&#x5728;&#x5B58;&#x50A8;&#x5668;&#x5185;&#x6309;&#x987A;&#x5E8F;&#x5B58;&#x653E;</li>
-<li>6.&#x4EE5;&#x8FD0;&#x7B97;&#x5668;&#x4E3A;&#x4E2D;&#x5FC3;</li>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li>1.计算机由五大部分组成</li>
+<li>2.指令和数据以同等地位存于存储器，可按地址寻访</li>
+<li>3.指令和数据用二进制表示</li>
+<li>4.指令由操作码和地址码组成</li>
+<li>5.指令在存储器内按顺序存放</li>
+<li>6.以运算器为中心</li>
 </ul>
-<h3 id="&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x6846;&#x56FE;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x6846;&#x56FE;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x6846;&#x56FE;"></a>&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x6846;&#x56FE;</h3><p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce936083b98919976.png"><img src="https://i.loli.net/2019/05/25/5ce936083b98919976.png" alt="&#x5B58;&#x50A8;&#x5668;&#x4E3A;&#x4E2D;&#x5FC3;" class="ui centered image"></a></p>
-<p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce938ee923bd54889.png"><img src="https://i.loli.net/2019/05/25/5ce938ee923bd54889.png" alt="&#x73B0;&#x4EE3;&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x6846;&#x56FE;" class="ui centered image"></a></p>
-<h3 id="&#x8BA1;&#x7B97;&#x673A;&#x5DE5;&#x4F5C;&#x6B65;&#x9AA4;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x5DE5;&#x4F5C;&#x6B65;&#x9AA4;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x5DE5;&#x4F5C;&#x6B65;&#x9AA4;"></a>&#x8BA1;&#x7B97;&#x673A;&#x5DE5;&#x4F5C;&#x6B65;&#x9AA4;</h3><p>1.&#x4E0A;&#x673A;&#x524D;</p>
-<ul class="ui list">
-<li>&#x5EFA;&#x7ACB;&#x6570;&#x5B66;&#x6A21;&#x578B;</li>
-<li>&#x786E;&#x5B9A;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;</li>
-<li>&#x7F16;&#x5236;&#x89E3;&#x9898;&#x7A0B;&#x5E8F;</li>
+<h3 id="计算机硬件框图"><a href="#计算机硬件框图" class="headerlink" title="计算机硬件框图"></a>计算机硬件框图</h3><p><img src="https://i.loli.net/2019/05/25/5ce936083b98919976.png" alt="存储器为中心"></p>
+<p><img src="https://i.loli.net/2019/05/25/5ce938ee923bd54889.png" alt="现代计算机硬件框图"></p>
+<h3 id="计算机工作步骤"><a href="#计算机工作步骤" class="headerlink" title="计算机工作步骤"></a>计算机工作步骤</h3><p>1.上机前</p>
+<ul>
+<li>建立数学模型</li>
+<li>确定计算方法</li>
+<li>编制解题程序</li>
 </ul>
-<p>2.&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x89E3;&#x9898;&#x8FC7;&#x7A0B;</p>
-<p>&#xFF01;&#xFF01;&#x6CA1;&#x61C2;</p>
-<h2 id="&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x7684;&#x4E3B;&#x8981;&#x6280;&#x672F;&#x6307;&#x6807;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x7684;&#x4E3B;&#x8981;&#x6280;&#x672F;&#x6307;&#x6807;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x7684;&#x4E3B;&#x8981;&#x6280;&#x672F;&#x6307;&#x6807;"></a>&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x7684;&#x4E3B;&#x8981;&#x6280;&#x672F;&#x6307;&#x6807;</h2><ul class="ui list">
-<li>1.&#x673A;&#x5668;&#x5B57;&#x957F;&#xFF1A;CPU&#x4E00;&#x6B21;&#x80FD;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x4F4D;&#x6570;&#xFF0C;&#x4E0E;CPU&#x4E2D;&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4F4D;&#x6570;&#x6709;&#x5173;</li>
-<li>2.&#x8FD0;&#x7B97;&#x901F;&#x5EA6;&#xFF1A;&#xFF08;&#x4E3B;&#x9891;&#xFF0C;&#x5409;&#x666E;&#x68EE;&#x6CD5;&#xFF0C;MIPS&#xFF0C;CPI&#xFF0C;FLOPS&#xFF09;</li>
-<li>3.&#x5B58;&#x50A8;&#x5BB9;&#x91CF;&#xFF1A;&#x5B58;&#x653E;&#x4E8C;&#x8FDB;&#x5236;&#x4FE1;&#x606F;&#x7684;&#x603B;&#x4F4D;&#x6570;</li>
+<p>2.计算机的解题过程</p>
+<p>！！没懂</p>
+<h2 id="计算机硬件的主要技术指标"><a href="#计算机硬件的主要技术指标" class="headerlink" title="计算机硬件的主要技术指标"></a>计算机硬件的主要技术指标</h2><ul>
+<li>1.机器字长：CPU一次能处理数据的位数，与CPU中的寄存器位数有关</li>
+<li>2.运算速度：（主频，吉普森法，MIPS，CPI，FLOPS）</li>
+<li>3.存储容量：存放二进制信息的总位数</li>
 </ul>
-<h1 id="&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;"><a href="#&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;" class="headerlink" title="&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;"></a>&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;</h1><h2 id="&#x603B;&#x7EBF;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a href="#&#x603B;&#x7EBF;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="headerlink" title="&#x603B;&#x7EBF;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;"></a>&#x603B;&#x7EBF;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2><p>1.&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x603B;&#x7EBF;&#xFF1F;</p>
-<p>2.&#x4EC0;&#x4E48;&#x662F;&#x603B;&#x7EBF;&#xFF1F;</p>
-<p>3.&#x603B;&#x7EBF;&#x4E0A;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x9001;&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x5F0F;&#xFF1F;&#x4E32;&#x884C;&#x3001;&#x5E76;&#x884C;</p>
-<p>4.&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x4E3E;&#x4F8B;&#xFF1A;</p>
-<p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce943b6e9a5357784.png"><img src="https://i.loli.net/2019/05/25/5ce943b6e9a5357784.png" alt="&#x9762;&#x5411;cpu&#x7684;&#x53CC;&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x6846;&#x56FE;" class="ui centered image"></a></p>
-<p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce943fb1e96395783.png"><img src="https://i.loli.net/2019/05/25/5ce943fb1e96395783.png" alt="&#x5355;&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x6846;&#x56FE;" class="ui centered image"></a></p>
-<p><a class="magnific-img" href="https://i.loli.net/2019/05/25/5ce94435ca55751007.png"><img src="https://i.loli.net/2019/05/25/5ce94435ca55751007.png" alt="&#x4EE5;&#x5B58;&#x50A8;&#x5668;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x53CC;&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x6846;&#x56FE;" class="ui centered image"></a></p>
-<h2 id="&#x603B;&#x7EBF;&#x7684;&#x5206;&#x7C7B;"><a href="#&#x603B;&#x7EBF;&#x7684;&#x5206;&#x7C7B;" class="headerlink" title="&#x603B;&#x7EBF;&#x7684;&#x5206;&#x7C7B;"></a>&#x603B;&#x7EBF;&#x7684;&#x5206;&#x7C7B;</h2><p>1.&#x7247;&#x5185;&#x603B;&#x7EBF;&#xFF1A;&#x82AF;&#x7247;&#x5185;&#x90E8;&#x7684;&#x603B;&#x7EBF;</p>
-<p>2.&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;&#xFF1A;&#x8BA1;&#x7B97;&#x673A;&#x5404;&#x90E8;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x4FE1;&#x606F;&#x4F20;&#x8F93;&#x7EBF;</p>
-<ul class="ui list">
-<li>&#x6570;&#x636E;&#x603B;&#x7EBF;&#xFF1A;&#x53CC;&#x5411;&#xFF0C;&#x4E0E;&#x673A;&#x5668;&#x5B57;&#x957F;&#xFF0C;&#x5B58;&#x50A8;&#x5B57;&#x957F;&#x6709;&#x5173;</li>
-<li>&#x5730;&#x5740;&#x603B;&#x7EBF;&#xFF1A;&#x5355;&#x5411;&#xFF0C;&#x4E0E;&#x5B58;&#x50A8;&#x5730;&#x5740;&#xFF0C;I/O&#x5730;&#x5740;&#x6709;&#x5173;</li>
-<li>&#x63A7;&#x5236;&#x603B;&#x7EBF;&#xFF1A;&#x6709;&#x51FA;&#x3001;&#x6709;&#x5165;</li>
+<h1 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h1><h2 id="总线的基本概念"><a href="#总线的基本概念" class="headerlink" title="总线的基本概念"></a>总线的基本概念</h2><p>1.为什么要用总线？</p>
+<p>2.什么是总线？</p>
+<p>3.总线上信息的传送有哪些方式？串行、并行</p>
+<p>4.总线结构的计算机举例：</p>
+<p><img src="https://i.loli.net/2019/05/25/5ce943b6e9a5357784.png" alt="面向cpu的双总线结构框图"></p>
+<p><img src="https://i.loli.net/2019/05/25/5ce943fb1e96395783.png" alt="单总线结构框图"></p>
+<p><img src="https://i.loli.net/2019/05/25/5ce94435ca55751007.png" alt="以存储器为中心的双总线结构框图"></p>
+<h2 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h2><p>1.片内总线：芯片内部的总线</p>
+<p>2.系统总线：计算机各部件之间的信息传输线</p>
+<ul>
+<li>数据总线：双向，与机器字长，存储字长有关</li>
+<li>地址总线：单向，与存储地址，I/O地址有关</li>
+<li>控制总线：有出、有入</li>
 </ul>
-<p>3.&#x901A;&#x4FE1;&#x603B;&#x7EBF;&#xFF1A;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x6216;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x4E0E;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x6253;&#x7684;&#x901A;&#x4FE1;</p>
-<ul class="ui list">
-<li>&#x4E32;&#x884C;&#x901A;&#x4FE1;&#x603B;&#x7EBF;</li>
-<li>&#x5E76;&#x884C;&#x901A;&#x4FE1;&#x603B;&#x7EBF;</li>
+<p>3.通信总线：用于计算机系统之间或计算机系统与其他系统之间打的通信</p>
+<ul>
+<li>串行通信总线</li>
+<li>并行通信总线</li>
 </ul>
-<h2 id="&#x603B;&#x7EBF;&#x7279;&#x6027;&#x53CA;&#x6027;&#x80FD;&#x6307;&#x6807;"><a href="#&#x603B;&#x7EBF;&#x7279;&#x6027;&#x53CA;&#x6027;&#x80FD;&#x6307;&#x6807;" class="headerlink" title="&#x603B;&#x7EBF;&#x7279;&#x6027;&#x53CA;&#x6027;&#x80FD;&#x6307;&#x6807;"></a>&#x603B;&#x7EBF;&#x7279;&#x6027;&#x53CA;&#x6027;&#x80FD;&#x6307;&#x6807;</h2><h3 id="&#x603B;&#x7EBF;&#x7279;&#x6027;"><a href="#&#x603B;&#x7EBF;&#x7279;&#x6027;" class="headerlink" title="&#x603B;&#x7EBF;&#x7279;&#x6027;"></a>&#x603B;&#x7EBF;&#x7279;&#x6027;</h3><ul class="ui list">
-<li>&#x673A;&#x68B0;&#x7279;&#x6027;&#xFF1A;&#x5C3A;&#x5BF8;&#x3001;&#x5F62;&#x72B6;&#x3001;&#x7BA1;&#x811A;&#x6570;&#x4EE5;&#x53CA;&#x6392;&#x5217;&#x987A;&#x5E8F;</li>
-<li>&#x7535;&#x6C14;&#x7279;&#x6027;&#xFF1A;&#x4F20;&#x8F93;&#x65B9;&#x5411;&#x548C;&#x6709;&#x6548;&#x7684;&#x7535;&#x5E73;&#x8303;&#x56F4;</li>
-<li>&#x529F;&#x80FD;&#x7279;&#x6027;&#xFF1A;&#x6BCF;&#x6839;&#x4F20;&#x8F93;&#x7EBF;&#x7684;&#x529F;&#x80FD;&#xFF1A;&#x5730;&#x5740;&#xFF0C;&#x6570;&#x636E;&#xFF0C;&#x63A7;&#x5236;</li>
-<li>&#x65F6;&#x95F4;&#x7279;&#x6027;&#xFF1A;&#x4FE1;&#x53F7;&#x7684;&#x65F6;&#x5E8F;&#x5173;&#x7CFB;</li>
+<h2 id="总线特性及性能指标"><a href="#总线特性及性能指标" class="headerlink" title="总线特性及性能指标"></a>总线特性及性能指标</h2><h3 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h3><ul>
+<li>机械特性：尺寸、形状、管脚数以及排列顺序</li>
+<li>电气特性：传输方向和有效的电平范围</li>
+<li>功能特性：每根传输线的功能：地址，数据，控制</li>
+<li>时间特性：信号的时序关系</li>
 </ul>
-<h3 id="&#x603B;&#x7EBF;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;"><a href="#&#x603B;&#x7EBF;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;" class="headerlink" title="&#x603B;&#x7EBF;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;"></a>&#x603B;&#x7EBF;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;</h3><p>1.&#x603B;&#x7EBF;&#x5BBD;&#x5EA6;&#xFF1A;&#x6570;&#x636E;&#x7EBF;&#x7684;&#x6839;&#x6570;<br>2.&#x6807;&#x51C6;&#x4F20;&#x8F93;&#x7387;&#xFF1A;&#x6BCF;&#x79D2;&#x4F20;&#x8F93;&#x7684;&#x6700;&#x5927;&#x5B57;&#x8282;&#x6570;&#xFF08;MBps&#xFF09;<br>3.&#x65F6;&#x949F;&#x540C;&#x6B65;/&#x5F02;&#x6B65;&#xFF1A;&#x540C;&#x6B65;&#x3001;&#x4E0D;&#x540C;&#x6B65;<br>4.&#x603B;&#x7EBF;&#x590D;&#x7528;&#xFF1A;&#x5730;&#x5740;&#x7EBF;&#x548C;&#x6570;&#x636E;&#x7EBF;&#x590D;&#x7528;<br>5.&#x4FE1;&#x53F7;&#x7EBF;&#x6570;&#xFF1A;&#x5730;&#x5740;&#x7EBF;&#xFF0C;&#x6570;&#x636E;&#x7EBF;&#xFF0C;&#x63A7;&#x5236;&#x7EBF;&#x7684;&#x603B;&#x548C;<br>6.&#x603B;&#x7EBF;&#x63A7;&#x5236;&#x65B9;&#x5F0F;&#xFF1A;&#x5E76;&#x53D1;&#x3001;&#x81EA;&#x52A8;&#x3001;&#x4EF2;&#x88C1;&#x3001;&#x903B;&#x8F91;&#x3001;&#x8BA1;&#x6570;<br>7.&#x5176;&#x4ED6;&#x6307;&#x6807;&#xFF1A;&#x8D1F;&#x8F7D;&#x80FD;&#x529B;</p>
-<h2 id="&#x603B;&#x7EBF;&#x7ED3;&#x6784;"><a href="#&#x603B;&#x7EBF;&#x7ED3;&#x6784;" class="headerlink" title="&#x603B;&#x7EBF;&#x7ED3;&#x6784;"></a>&#x603B;&#x7EBF;&#x7ED3;&#x6784;</h2><p>1.&#x5355;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br>  <a class="magnific-img" href="https://i.loli.net/2019/05/26/5cea90dc6b31a61619.png"><img src="https://i.loli.net/2019/05/26/5cea90dc6b31a61619.png" alt="&#x5355;&#x603B;&#x7EBF;&#x7ED3;&#x6784;" class="ui centered image"></a></p>
-<p>2.&#x591A;&#x603B;&#x7EBF;&#x7ED3;&#x6784;</p>
-<ul class="ui list">
-<li>&#x53CC;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea9137adb1352276.png" alt="TIM&#x56FE;&#x7247;20190526211340.png"></li>
-<li>&#x4E09;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea919d978a439107.png" alt="&#x4E09;&#x603B;&#x7EBF;&#x7ED3;&#x6784;"><br><img src="https://i.loli.net/2019/05/26/5cea925b512e624462.png" alt="&#x4E09;&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x5F62;&#x5F0F;2"></li>
-<li>&#x56DB;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea9206ade5583221.png" alt="&#x56DB;&#x603B;&#x7EBF;&#x7ED3;&#x6784;"></li>
+<h3 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h3><p>1.总线宽度：数据线的根数<br>2.标准传输率：每秒传输的最大字节数（MBps）<br>3.时钟同步/异步：同步、不同步<br>4.总线复用：地址线和数据线复用<br>5.信号线数：地址线，数据线，控制线的总和<br>6.总线控制方式：并发、自动、仲裁、逻辑、计数<br>7.其他指标：负载能力</p>
+<h2 id="总线结构"><a href="#总线结构" class="headerlink" title="总线结构"></a>总线结构</h2><p>1.单总线结构<br>  <img src="https://i.loli.net/2019/05/26/5cea90dc6b31a61619.png" alt="单总线结构"></p>
+<p>2.多总线结构</p>
+<ul>
+<li>双总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9137adb1352276.png" alt="TIM图片20190526211340.png"></li>
+<li>三总线结构<br><img src="https://i.loli.net/2019/05/26/5cea919d978a439107.png" alt="三总线结构"><br><img src="https://i.loli.net/2019/05/26/5cea925b512e624462.png" alt="三总线结构形式2"></li>
+<li>四总线结构<br><img src="https://i.loli.net/2019/05/26/5cea9206ade5583221.png" alt="四总线结构"></li>
 </ul>
-<p>3.&#x603B;&#x7EBF;&#x7ED3;&#x6784;&#x4E3E;&#x4F8B;</p>
-<ul class="ui list">
-<li>&#x4F20;&#x7EDF;&#x5FAE;&#x578B;&#x673A;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea92c1a37dd15570.png" alt="TIM&#x56FE;&#x7247;20190526212044.png"></li>
-<li>VL-BUS&#x5C40;&#x90E8;&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea930cf2fb880521.png" alt="TIM&#x56FE;&#x7247;20190526212211.png"></li>
-<li>PCI&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea934c1e70660914.png" alt="TIM&#x56FE;&#x7247;20190526212315.png"></li>
-<li>&#x591A;&#x5C42;CPI&#x603B;&#x7EBF;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/26/5cea93903668f33425.png" alt="TIM&#x56FE;&#x7247;20190526212420.png"></li>
+<p>3.总线结构举例</p>
+<ul>
+<li>传统微型机总线结构<br><img src="https://i.loli.net/2019/05/26/5cea92c1a37dd15570.png" alt="TIM图片20190526212044.png"></li>
+<li>VL-BUS局部总线结构<br><img src="https://i.loli.net/2019/05/26/5cea930cf2fb880521.png" alt="TIM图片20190526212211.png"></li>
+<li>PCI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea934c1e70660914.png" alt="TIM图片20190526212315.png"></li>
+<li>多层CPI总线结构<br><img src="https://i.loli.net/2019/05/26/5cea93903668f33425.png" alt="TIM图片20190526212420.png"></li>
 </ul>
-<h2 id="&#x603B;&#x7EBF;&#x63A7;&#x5236;"><a href="#&#x603B;&#x7EBF;&#x63A7;&#x5236;" class="headerlink" title="&#x603B;&#x7EBF;&#x63A7;&#x5236;"></a>&#x603B;&#x7EBF;&#x63A7;&#x5236;</h2><h3 id="&#x603B;&#x7EBF;&#x5224;&#x4F18;&#x63A7;&#x5236;"><a href="#&#x603B;&#x7EBF;&#x5224;&#x4F18;&#x63A7;&#x5236;" class="headerlink" title="&#x603B;&#x7EBF;&#x5224;&#x4F18;&#x63A7;&#x5236;"></a>&#x603B;&#x7EBF;&#x5224;&#x4F18;&#x63A7;&#x5236;</h3><p>1.&#x57FA;&#x672C;&#x6982;&#x5FF5;</p>
-<ul class="ui list">
-<li>&#x4E3B;&#x8BBE;&#x5907;&#xFF1A;&#x5BF9;&#x4E3B;&#x7EBF;&#x6709;&#x63A7;&#x5236;&#x6743;</li>
-<li>&#x4ECE;&#x8BBE;&#x5907;&#xFF1A;&#x54CD;&#x5E94;&#x4ECE;&#x4E3B;&#x8BBE;&#x5907;&#x53D1;&#x6765;&#x7684;&#x603B;&#x7EBF;&#x547D;&#x4EE4;</li>
-<li>&#x603B;&#x7EBF;&#x5224;&#x4F18;&#x63A7;&#x5236;<ul>
-<li>&#x96C6;&#x4E2D;&#x5F0F;<ul>
-<li>&#x94FE;&#x5F0F;&#x67E5;&#x8BE2;<br><img src="https://i.loli.net/2019/05/26/5cea94622856199019.png" alt="TIM&#x56FE;&#x7247;20190526212754.png"></li>
-<li>&#x8BA1;&#x65F6;&#x5668;&#x5B9A;&#x65F6;&#x67E5;&#x8BE2;<br><img src="https://i.loli.net/2019/05/26/5cea94c03226088054.png" alt="TIM&#x56FE;&#x7247;20190526212847.png"></li>
-<li>&#x72EC;&#x7ACB;&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;<br><img src="https://i.loli.net/2019/05/26/5cea94e07a75417095.png" alt="TIM&#x56FE;&#x7247;20190526212951.png"></li>
-</ul>
-</li>
-<li>&#x5206;&#x5E03;&#x5F0F;</li>
+<h2 id="总线控制"><a href="#总线控制" class="headerlink" title="总线控制"></a>总线控制</h2><h3 id="总线判优控制"><a href="#总线判优控制" class="headerlink" title="总线判优控制"></a>总线判优控制</h3><p>1.基本概念</p>
+<ul>
+<li>主设备：对主线有控制权</li>
+<li>从设备：响应从主设备发来的总线命令</li>
+<li>总线判优控制<ul>
+<li>集中式<ul>
+<li>链式查询<br><img src="https://i.loli.net/2019/05/26/5cea94622856199019.png" alt="TIM图片20190526212754.png"></li>
+<li>计时器定时查询<br><img src="https://i.loli.net/2019/05/26/5cea94c03226088054.png" alt="TIM图片20190526212847.png"></li>
+<li>独立请求方式<br><img src="https://i.loli.net/2019/05/26/5cea94e07a75417095.png" alt="TIM图片20190526212951.png"></li>
 </ul>
 </li>
-</ul>
-<h3 id="&#x603B;&#x7EBF;&#x901A;&#x4FE1;&#x63A7;&#x5236;"><a href="#&#x603B;&#x7EBF;&#x901A;&#x4FE1;&#x63A7;&#x5236;" class="headerlink" title="&#x603B;&#x7EBF;&#x901A;&#x4FE1;&#x63A7;&#x5236;"></a>&#x603B;&#x7EBF;&#x901A;&#x4FE1;&#x63A7;&#x5236;</h3><p>1.&#x76EE;&#x7684;&#xFF1A;&#x89E3;&#x51B3;&#x901A;&#x4FE1;&#x53CC;&#x65B9;&#x534F;&#x8C03;&#x914D;&#x5408;&#x95EE;&#x9898;</p>
-<p>2.&#x603B;&#x7EBF;&#x4F20;&#x8F93;&#x5468;&#x671F;</p>
-<ul class="ui list">
-<li>&#x7533;&#x8BF7;&#x5206;&#x914D;&#x9636;&#x6BB5;&#xFF1A;&#x4E3B;&#x6A21;&#x5757;&#x7533;&#x8BF7;&#xFF0C;&#x603B;&#x7EBF;&#x4EF2;&#x88C1;&#x51B3;&#x5B9A;</li>
-<li>&#x5BFB;&#x5740;&#x9636;&#x6BB5;&#xFF1A;&#x4E3B;&#x6A21;&#x5757;&#x5411;&#x4ECE;&#x6A21;&#x5757;&#x7ED9;&#x51FA;&#x5730;&#x5740;&#x548C;&#x547D;&#x4EE4;</li>
-<li>&#x4F20;&#x6570;&#x9636;&#x6BB5;&#xFF1A;&#x4E3B;&#x6A21;&#x5757;&#x548C;&#x4ECE;&#x6A21;&#x5757;&#x4EA4;&#x6362;&#x6570;&#x636E;</li>
-<li>&#x7ED3;&#x675F;&#x9636;&#x6BB5;&#xFF1A;&#x4E3B;&#x6A21;&#x5757;&#x64A4;&#x9500;&#x6709;&#x5173;&#x4FE1;&#x606F;</li>
-</ul>
-<p>3.&#x603B;&#x7EBF;&#x901A;&#x4FE1;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x5F0F;</p>
-<ul class="ui list">
-<li>&#x540C;&#x6B65;&#x901A;&#x4FE1;&#xFF1A;&#x7531;&#x7EDF;&#x4E00;&#x65F6;&#x6807;&#x63A7;&#x5236;&#x6570;&#x636E;&#x4F20;<ul>
-<li>&#x540C;&#x6B65;&#x5F0F;&#x6570;&#x636E;&#x8F93;&#x5165;<br><img src="https://i.loli.net/2019/05/26/5cea9c49034f374748.png" alt="TIM&#x56FE;&#x7247;20190526220134.png"></li>
-<li>&#x540C;&#x6B65;&#x5F0F;&#x6570;&#x636E;&#x8F93;&#x51FA;<br><img src="https://i.loli.net/2019/05/26/5cea9ca3a222967150.png" alt="TIM&#x56FE;&#x7247;20190526220303.png"></li>
-</ul>
-</li>
-<li>&#x5F02;&#x6B65;&#x901A;&#x4FE1;&#xFF1A;&#x91C7;&#x7528;&#x5E94;&#x7B54;&#x65B9;&#x5F0F;&#xFF0C;&#x6CA1;&#x6709;&#x516C;&#x5171;&#x65F6;&#x949F;&#x6807;&#x51C6;<br><img src="https://i.loli.net/2019/05/26/5cea9d02a0a8140010.png" alt="TIM&#x56FE;&#x7247;20190526220443.png"></li>
-<li>&#x534A;&#x540C;&#x6B65;&#x901A;&#x4FE1;&#xFF1A;&#x540C;&#x6B65;&#x3001;&#x5F02;&#x6B65;&#x7ED3;&#x5408;<ul>
-<li>&#x540C;&#x6B65;&#xFF1A;&#x53D1;&#x9001;&#x65B9;&#x7528;&#x7CFB;&#x7EDF;&#x65F6;&#x949F;&#x524D;&#x6CBF;&#x53D1;&#x4FE1;&#x53F7;&#xFF0C;&#x63A5;&#x6536;&#x65B9;&#x7528;&#x7CFB;&#x7EDF;&#x65F6;&#x949F;&#x540E;&#x6CBF;&#x5224;&#x65AD;&#x3001;&#x8BC6;&#x522B;</li>
-<li>&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x901F;&#x5EA6;&#x7684;&#x6A21;&#x5757;&#x548C;&#x8C10;&#x5DE5;&#x4F5C;&#xFF0C;&#x589E;&#x52A0;&#x4E00;&#x6761;&#x201C;&#x7B49;&#x5F85;&#x201D;&#x54CD;&#x5E94;&#x4FE1;&#x53F7;<br><img src="https://i.loli.net/2019/05/26/5cea9da3c14b049428.png" alt="TIM&#x56FE;&#x7247;20190526220716.png"></li>
-</ul>
-</li>
-<li>&#x5206;&#x79BB;&#x5F0F;&#x901A;&#x4FE1;&#xFF1A;&#x5145;&#x5206;&#x6316;&#x6398;&#x7CFB;&#x7EDF;&#x603B;&#x7EBF;&#x6BCF;&#x4E2A;&#x77AC;&#x95F4;&#x7684;&#x6F5C;&#x529B;&#xFF0C;</li>
-</ul>
-<h1 id="&#x5B58;&#x50A8;&#x5668;"><a href="#&#x5B58;&#x50A8;&#x5668;" class="headerlink" title="&#x5B58;&#x50A8;&#x5668;"></a>&#x5B58;&#x50A8;&#x5668;</h1><h2 id="&#x6982;&#x8FF0;"><a href="#&#x6982;&#x8FF0;" class="headerlink" title="&#x6982;&#x8FF0;"></a>&#x6982;&#x8FF0;</h2><h3 id="&#x5B58;&#x50A8;&#x5668;&#x5206;&#x7C7B;"><a href="#&#x5B58;&#x50A8;&#x5668;&#x5206;&#x7C7B;" class="headerlink" title="&#x5B58;&#x50A8;&#x5668;&#x5206;&#x7C7B;"></a>&#x5B58;&#x50A8;&#x5668;&#x5206;&#x7C7B;</h3><p>1.&#x6309;&#x5B58;&#x50A8;&#x4ECB;&#x8D28;</p>
-<p>2.&#x6309;&#x5B58;&#x53D6;&#x65B9;&#x5F0F;</p>
-<p>3.&#x6309;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x4F5C;&#x7528;&#x5206;&#x7C7B;</p>
-<h3 id="&#x5B58;&#x50A8;&#x5668;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;"><a href="#&#x5B58;&#x50A8;&#x5668;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;" class="headerlink" title="&#x5B58;&#x50A8;&#x5668;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;"></a>&#x5B58;&#x50A8;&#x5668;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</h3><p>1.&#x5B58;&#x50A8;&#x5668;&#x4E09;&#x4E2A;&#x4E3B;&#x8981;&#x7279;&#x6027;&#x7684;&#x5173;&#x7CFB;<br><a class="magnific-img" href="https://i.loli.net/2019/05/26/5ceaa3b2d5d2224622.png"><img src="https://i.loli.net/2019/05/26/5ceaa3b2d5d2224622.png" alt="TIM&#x56FE;&#x7247;20190526223303.png" class="ui centered image"></a></p>
-<p>2.&#x7F13;&#x5B58;-&#x4E3B;&#x5B58;&#x5C42;&#x6B21;&#x548C;&#x4E3B;&#x5B58;-&#x8F85;&#x5B58;&#x5C42;&#x6B21;<br><a class="magnific-img" href="https://i.loli.net/2019/05/26/5ceaa416bc95578697.png"><img src="https://i.loli.net/2019/05/26/5ceaa416bc95578697.png" alt="TIM&#x56FE;&#x7247;20190526223449.png" class="ui centered image"></a></p>
-<h2 id="&#x4E3B;&#x5B58;&#x50A8;&#x5668;"><a href="#&#x4E3B;&#x5B58;&#x50A8;&#x5668;" class="headerlink" title="&#x4E3B;&#x5B58;&#x50A8;&#x5668;"></a>&#x4E3B;&#x5B58;&#x50A8;&#x5668;</h2><h3 id="&#x6982;&#x8FF0;-1"><a href="#&#x6982;&#x8FF0;-1" class="headerlink" title="&#x6982;&#x8FF0;"></a>&#x6982;&#x8FF0;</h3><p>1.&#x4E3B;&#x5B58;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;<br><a class="magnific-img" href="https://i.loli.net/2019/05/26/5ceaaeae1a0d131497.png"><img src="https://i.loli.net/2019/05/26/5ceaaeae1a0d131497.png" alt="&#x4E3B;&#x5B58;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;" class="ui centered image"></a></p>
-<p>2.&#x4E3B;&#x5B58;&#x548C;CPU&#x7684;&#x8054;&#x7CFB;<br><a class="magnific-img" href="https://i.loli.net/2019/05/26/5ceaaeec9388886955.png"><img src="https://i.loli.net/2019/05/26/5ceaaeec9388886955.png" alt="&#x4E3B;&#x5B58;&#x548C;CPU&#x7684;&#x8054;&#x7CFB;" class="ui centered image"></a></p>
-<p>3.&#x4E3B;&#x5B58;&#x4E2D;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;<br><a class="magnific-img" href="https://i.loli.net/2019/05/26/5ceaaf343621110595.png"><img src="https://i.loli.net/2019/05/26/5ceaaf343621110595.png" alt="&#x4E3B;&#x5B58;&#x4E2D;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;" class="ui centered image"></a></p>
-<p>4.&#x4E3B;&#x5B58;&#x7684;&#x6280;&#x672F;&#x6307;&#x6807;</p>
-<ul class="ui list">
-<li>&#x5B58;&#x50A8;&#x5BB9;&#x91CF;</li>
-<li>&#x5B58;&#x50A8;&#x901F;&#x5EA6;<ul>
-<li>&#x5B58;&#x53D6;&#x65F6;&#x95F4;</li>
-<li>&#x5B58;&#x53D6;&#x5468;&#x671F;</li>
-</ul>
-</li>
-<li>&#x5B58;&#x50A8;&#x5668;&#x7684;&#x5E26;&#x6846;</li>
-</ul>
-<h3 id="&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;"><a href="#&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;" class="headerlink" title="&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;"></a>&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;</h3><ul class="ui list">
-<li>&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;<br><img src="https://i.loli.net/2019/05/27/5cebcf460346031662.png" alt="TIM&#x56FE;&#x7247;20190527195006.png"><br><img src="https://i.loli.net/2019/05/27/5cebcf84a009053211.png" alt="TIM&#x56FE;&#x7247;20190527195227.png"></li>
-<li>&#x534A;&#x5BFC;&#x4F53;&#x5B58;&#x50A8;&#x82AF;&#x7247;&#x7684;&#x8BD1;&#x7801;&#x9A71;&#x52A8;&#x65B9;&#x5F0F;<ul>
-<li>&#x7EBF;&#x9009;&#x6CD5;<br><img src="https://i.loli.net/2019/05/27/5cebcfab7bde294788.png" alt="TIM&#x56FE;&#x7247;20190527195305.png"></li>
-<li>&#x91CD;&#x5408;&#x6CD5;<br><img src="https://i.loli.net/2019/05/27/5cebcff4cd39438555.png" alt="TIM&#x56FE;&#x7247;20190527195402.png"></li>
+<li>分布式</li>
 </ul>
 </li>
 </ul>
-<h3 id="&#x968F;&#x673A;&#x5B58;&#x50A8;&#x5668;&#xFF08;RAM&#xFF09;"><a href="#&#x968F;&#x673A;&#x5B58;&#x50A8;&#x5668;&#xFF08;RAM&#xFF09;" class="headerlink" title="&#x968F;&#x673A;&#x5B58;&#x50A8;&#x5668;&#xFF08;RAM&#xFF09;"></a>&#x968F;&#x673A;&#x5B58;&#x50A8;&#x5668;&#xFF08;RAM&#xFF09;</h3><ul class="ui list">
-<li>&#x9759;&#x6001;RAM&#xFF08;SRAM&#xFF09;<ul>
-<li>&#x57FA;&#x672C;&#x7535;&#x8DEF;<br><img src="https://i.loli.net/2019/05/27/5cebd04d7254523351.png" alt="TIM&#x56FE;&#x7247;20190527195542.png"></li>
-<li>&#x8BFB;&#x64CD;&#x4F5C;<br><img src="https://i.loli.net/2019/05/27/5cebd10a8268495533.png" alt="TIM&#x56FE;&#x7247;20190527195856.png"></li>
-<li>&#x5199;&#x64CD;&#x4F5C;<br><img src="https://i.loli.net/2019/05/27/5cebd1db2211590679.png" alt="TIM&#x56FE;&#x7247;20190527195928.png"></li>
-<li>&#x8BFB;&#x65F6;&#x5E8F;<br><img src="https://i.loli.net/2019/05/27/5cebd19864bcd16202.png" alt="TIM&#x56FE;&#x7247;20190527200107.png"></li>
-<li>&#x5199;&#x65F6;&#x5E8F;<br><img src="https://i.loli.net/2019/05/27/5cebd214ae48e81530.png" alt="TIM&#x56FE;&#x7247;20190527200320.png"></li>
+<h3 id="总线通信控制"><a href="#总线通信控制" class="headerlink" title="总线通信控制"></a>总线通信控制</h3><p>1.目的：解决通信双方协调配合问题</p>
+<p>2.总线传输周期</p>
+<ul>
+<li>申请分配阶段：主模块申请，总线仲裁决定</li>
+<li>寻址阶段：主模块向从模块给出地址和命令</li>
+<li>传数阶段：主模块和从模块交换数据</li>
+<li>结束阶段：主模块撤销有关信息</li>
+</ul>
+<p>3.总线通信的四种方式</p>
+<ul>
+<li>同步通信：由统一时标控制数据传<ul>
+<li>同步式数据输入<br><img src="https://i.loli.net/2019/05/26/5cea9c49034f374748.png" alt="TIM图片20190526220134.png"></li>
+<li>同步式数据输出<br><img src="https://i.loli.net/2019/05/26/5cea9ca3a222967150.png" alt="TIM图片20190526220303.png"></li>
 </ul>
 </li>
-<li>&#x52A8;&#x6001;RAM&#xFF08;DRAM&#xFF09;</li>
+<li>异步通信：采用应答方式，没有公共时钟标准<br><img src="https://i.loli.net/2019/05/26/5cea9d02a0a8140010.png" alt="TIM图片20190526220443.png"></li>
+<li>半同步通信：同步、异步结合<ul>
+<li>同步：发送方用系统时钟前沿发信号，接收方用系统时钟后沿判断、识别</li>
+<li>允许不同速度的模块和谐工作，增加一条“等待”响应信号<br><img src="https://i.loli.net/2019/05/26/5cea9da3c14b049428.png" alt="TIM图片20190526220716.png"></li>
 </ul>
-<h3 id="&#x53EA;&#x8BFB;&#x5B58;&#x50A8;&#x5668;&#xFF08;ROM&#xFF09;"><a href="#&#x53EA;&#x8BFB;&#x5B58;&#x50A8;&#x5668;&#xFF08;ROM&#xFF09;" class="headerlink" title="&#x53EA;&#x8BFB;&#x5B58;&#x50A8;&#x5668;&#xFF08;ROM&#xFF09;"></a>&#x53EA;&#x8BFB;&#x5B58;&#x50A8;&#x5668;&#xFF08;ROM&#xFF09;</h3><h3 id="&#x5B58;&#x50A8;&#x5668;&#x4E0E;CPU&#x7684;&#x8FDE;&#x63A5;"><a href="#&#x5B58;&#x50A8;&#x5668;&#x4E0E;CPU&#x7684;&#x8FDE;&#x63A5;" class="headerlink" title="&#x5B58;&#x50A8;&#x5668;&#x4E0E;CPU&#x7684;&#x8FDE;&#x63A5;"></a>&#x5B58;&#x50A8;&#x5668;&#x4E0E;CPU&#x7684;&#x8FDE;&#x63A5;</h3><h3 id="&#x5B58;&#x50A8;&#x5668;&#x7684;&#x6821;&#x9A8C;"><a href="#&#x5B58;&#x50A8;&#x5668;&#x7684;&#x6821;&#x9A8C;" class="headerlink" title="&#x5B58;&#x50A8;&#x5668;&#x7684;&#x6821;&#x9A8C;"></a>&#x5B58;&#x50A8;&#x5668;&#x7684;&#x6821;&#x9A8C;</h3><h3 id="&#x63D0;&#x9AD8;&#x8BBF;&#x5B58;&#x901F;&#x5EA6;&#x7684;&#x63AA;&#x65BD;"><a href="#&#x63D0;&#x9AD8;&#x8BBF;&#x5B58;&#x901F;&#x5EA6;&#x7684;&#x63AA;&#x65BD;" class="headerlink" title="&#x63D0;&#x9AD8;&#x8BBF;&#x5B58;&#x901F;&#x5EA6;&#x7684;&#x63AA;&#x65BD;"></a>&#x63D0;&#x9AD8;&#x8BBF;&#x5B58;&#x901F;&#x5EA6;&#x7684;&#x63AA;&#x65BD;</h3><h2 id="&#x9AD8;&#x901F;&#x7F13;&#x51B2;&#x5B58;&#x50A8;&#x5668;"><a href="#&#x9AD8;&#x901F;&#x7F13;&#x51B2;&#x5B58;&#x50A8;&#x5668;" class="headerlink" title="&#x9AD8;&#x901F;&#x7F13;&#x51B2;&#x5B58;&#x50A8;&#x5668;"></a>&#x9AD8;&#x901F;&#x7F13;&#x51B2;&#x5B58;&#x50A8;&#x5668;</h2><h3 id="&#x6982;&#x8FF0;-2"><a href="#&#x6982;&#x8FF0;-2" class="headerlink" title="&#x6982;&#x8FF0;"></a>&#x6982;&#x8FF0;</h3><h3 id="Cache-&#x4E3B;&#x5B58;&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;"><a href="#Cache-&#x4E3B;&#x5B58;&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;" class="headerlink" title="Cache-&#x4E3B;&#x5B58;&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;"></a>Cache-&#x4E3B;&#x5B58;&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;</h3><h3 id="&#x66FF;&#x6362;&#x7B97;&#x6CD5;"><a href="#&#x66FF;&#x6362;&#x7B97;&#x6CD5;" class="headerlink" title="&#x66FF;&#x6362;&#x7B97;&#x6CD5;"></a>&#x66FF;&#x6362;&#x7B97;&#x6CD5;</h3><h2 id="&#x8F85;&#x52A9;&#x5B58;&#x50A8;&#x5668;"><a href="#&#x8F85;&#x52A9;&#x5B58;&#x50A8;&#x5668;" class="headerlink" title="&#x8F85;&#x52A9;&#x5B58;&#x50A8;&#x5668;"></a>&#x8F85;&#x52A9;&#x5B58;&#x50A8;&#x5668;</h2><h1 id="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7CFB;&#x7EDF;"><a href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7CFB;&#x7EDF;"></a>&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7CFB;&#x7EDF;</h1><h2 id="&#x6982;&#x8FF0;-3"><a href="#&#x6982;&#x8FF0;-3" class="headerlink" title="&#x6982;&#x8FF0;"></a>&#x6982;&#x8FF0;</h2><h2 id="&#x5916;&#x90E8;&#x8BBE;&#x5907;"><a href="#&#x5916;&#x90E8;&#x8BBE;&#x5907;" class="headerlink" title="&#x5916;&#x90E8;&#x8BBE;&#x5907;"></a>&#x5916;&#x90E8;&#x8BBE;&#x5907;</h2><h2 id="I-O&#x63A5;&#x53E3;"><a href="#I-O&#x63A5;&#x53E3;" class="headerlink" title="I/O&#x63A5;&#x53E3;"></a>I/O&#x63A5;&#x53E3;</h2><h2 id="&#x7A0B;&#x5E8F;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;"><a href="#&#x7A0B;&#x5E8F;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;"></a>&#x7A0B;&#x5E8F;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;</h2><h2 id="&#x7A0B;&#x5E8F;&#x4E2D;&#x65AD;&#x65B9;&#x5F0F;"><a href="#&#x7A0B;&#x5E8F;&#x4E2D;&#x65AD;&#x65B9;&#x5F0F;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x4E2D;&#x65AD;&#x65B9;&#x5F0F;"></a>&#x7A0B;&#x5E8F;&#x4E2D;&#x65AD;&#x65B9;&#x5F0F;</h2><h2 id="DMA&#x65B9;&#x5F0F;"><a href="#DMA&#x65B9;&#x5F0F;" class="headerlink" title="DMA&#x65B9;&#x5F0F;"></a>DMA&#x65B9;&#x5F0F;</h2><h1 id="&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x6CD5;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x6CD5;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x6CD5;"></a>&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x6CD5;</h1><h2 id="&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x6709;&#x7B26;&#x53F7;&#x6570;"><a href="#&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x6709;&#x7B26;&#x53F7;&#x6570;" class="headerlink" title="&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x6709;&#x7B26;&#x53F7;&#x6570;"></a>&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x6709;&#x7B26;&#x53F7;&#x6570;</h2><h2 id="&#x6570;&#x7684;&#x5B9A;&#x70B9;&#x8868;&#x793A;&#x548C;&#x6D6E;&#x70B9;&#x8868;&#x793A;"><a href="#&#x6570;&#x7684;&#x5B9A;&#x70B9;&#x8868;&#x793A;&#x548C;&#x6D6E;&#x70B9;&#x8868;&#x793A;" class="headerlink" title="&#x6570;&#x7684;&#x5B9A;&#x70B9;&#x8868;&#x793A;&#x548C;&#x6D6E;&#x70B9;&#x8868;&#x793A;"></a>&#x6570;&#x7684;&#x5B9A;&#x70B9;&#x8868;&#x793A;&#x548C;&#x6D6E;&#x70B9;&#x8868;&#x793A;</h2><h2 id="&#x5B9A;&#x70B9;&#x8FD0;&#x7B97;"><a href="#&#x5B9A;&#x70B9;&#x8FD0;&#x7B97;" class="headerlink" title="&#x5B9A;&#x70B9;&#x8FD0;&#x7B97;"></a>&#x5B9A;&#x70B9;&#x8FD0;&#x7B97;</h2><h2 id="&#x6D6E;&#x70B9;&#x56DB;&#x5219;&#x8FD0;&#x7B97;"><a href="#&#x6D6E;&#x70B9;&#x56DB;&#x5219;&#x8FD0;&#x7B97;" class="headerlink" title="&#x6D6E;&#x70B9;&#x56DB;&#x5219;&#x8FD0;&#x7B97;"></a>&#x6D6E;&#x70B9;&#x56DB;&#x5219;&#x8FD0;&#x7B97;</h2><h2 id="&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;"><a href="#&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;" class="headerlink" title="&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;"></a>&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;</h2><h1 id="&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;"><a href="#&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;"></a>&#x6307;&#x4EE4;&#x7CFB;&#x7EDF;</h1><h2 id="&#x673A;&#x5668;&#x6307;&#x4EE4;"><a href="#&#x673A;&#x5668;&#x6307;&#x4EE4;" class="headerlink" title="&#x673A;&#x5668;&#x6307;&#x4EE4;"></a>&#x673A;&#x5668;&#x6307;&#x4EE4;</h2><h2 id="&#x64CD;&#x4F5C;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;"><a href="#&#x64CD;&#x4F5C;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;" class="headerlink" title="&#x64CD;&#x4F5C;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;"></a>&#x64CD;&#x4F5C;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;</h2><h2 id="&#x5BFB;&#x5740;&#x65B9;&#x5F0F;"><a href="#&#x5BFB;&#x5740;&#x65B9;&#x5F0F;" class="headerlink" title="&#x5BFB;&#x5740;&#x65B9;&#x5F0F;"></a>&#x5BFB;&#x5740;&#x65B9;&#x5F0F;</h2><h2 id="&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x4E3E;&#x4F8B;"><a href="#&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x4E3E;&#x4F8B;" class="headerlink" title="&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x4E3E;&#x4F8B;"></a>&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x4E3E;&#x4F8B;</h2><h2 id="RISC&#x6280;&#x672F;"><a href="#RISC&#x6280;&#x672F;" class="headerlink" title="RISC&#x6280;&#x672F;"></a>RISC&#x6280;&#x672F;</h2><h1 id="cpu&#x7684;&#x7ED3;&#x6784;&#x548C;&#x529F;&#x80FD;"><a href="#cpu&#x7684;&#x7ED3;&#x6784;&#x548C;&#x529F;&#x80FD;" class="headerlink" title="cpu&#x7684;&#x7ED3;&#x6784;&#x548C;&#x529F;&#x80FD;"></a>cpu&#x7684;&#x7ED3;&#x6784;&#x548C;&#x529F;&#x80FD;</h1><h2 id="CPU&#x7684;&#x7ED3;&#x6784;"><a href="#CPU&#x7684;&#x7ED3;&#x6784;" class="headerlink" title="CPU&#x7684;&#x7ED3;&#x6784;"></a>CPU&#x7684;&#x7ED3;&#x6784;</h2><h2 id="&#x6307;&#x4EE4;&#x5468;&#x671F;"><a href="#&#x6307;&#x4EE4;&#x5468;&#x671F;" class="headerlink" title="&#x6307;&#x4EE4;&#x5468;&#x671F;"></a>&#x6307;&#x4EE4;&#x5468;&#x671F;</h2><h2 id="&#x6307;&#x4EE4;&#x6D41;&#x6C34;"><a href="#&#x6307;&#x4EE4;&#x6D41;&#x6C34;" class="headerlink" title="&#x6307;&#x4EE4;&#x6D41;&#x6C34;"></a>&#x6307;&#x4EE4;&#x6D41;&#x6C34;</h2><h2 id="&#x4E2D;&#x65AD;&#x7CFB;&#x7EDF;"><a href="#&#x4E2D;&#x65AD;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x4E2D;&#x65AD;&#x7CFB;&#x7EDF;"></a>&#x4E2D;&#x65AD;&#x7CFB;&#x7EDF;</h2><h1 id="&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;"><a href="#&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;" class="headerlink" title="&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;"></a>&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;</h1><h2 id="&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x7684;&#x5206;&#x6790;"><a href="#&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x7684;&#x5206;&#x6790;" class="headerlink" title="&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x7684;&#x5206;&#x6790;"></a>&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x7684;&#x5206;&#x6790;</h2><h2 id="&#x64CD;&#x4F5C;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;"><a href="#&#x64CD;&#x4F5C;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;" class="headerlink" title="&#x64CD;&#x4F5C;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;"></a>&#x64CD;&#x4F5C;&#x5355;&#x5143;&#x7684;&#x529F;&#x80FD;</h2><h1 id="&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x8BBE;&#x8BA1;"><a href="#&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x8BBE;&#x8BA1;" class="headerlink" title="&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x8BBE;&#x8BA1;"></a>&#x63A7;&#x5236;&#x5355;&#x5143;&#x7684;&#x8BBE;&#x8BA1;</h1><h2 id="&#x7EC4;&#x5408;&#x903B;&#x8F91;&#x8BBE;&#x8BA1;"><a href="#&#x7EC4;&#x5408;&#x903B;&#x8F91;&#x8BBE;&#x8BA1;" class="headerlink" title="&#x7EC4;&#x5408;&#x903B;&#x8F91;&#x8BBE;&#x8BA1;"></a>&#x7EC4;&#x5408;&#x903B;&#x8F91;&#x8BBE;&#x8BA1;</h2><h2 id="&#x5FAE;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;"><a href="#&#x5FAE;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;" class="headerlink" title="&#x5FAE;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;"></a>&#x5FAE;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;</h2>
-                        
-                    </div>
+</li>
+<li>分离式通信：充分挖掘系统总线每个瞬间的潜力，</li>
+</ul>
+<h1 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="存储器分类"><a href="#存储器分类" class="headerlink" title="存储器分类"></a>存储器分类</h3><p>1.按存储介质</p>
+<p>2.按存取方式</p>
+<p>3.按在计算机中的作用分类</p>
+<h3 id="存储器的层次结构"><a href="#存储器的层次结构" class="headerlink" title="存储器的层次结构"></a>存储器的层次结构</h3><p>1.存储器三个主要特性的关系<br><img src="https://i.loli.net/2019/05/26/5ceaa3b2d5d2224622.png" alt="TIM图片20190526223303.png"></p>
+<p>2.缓存-主存层次和主存-辅存层次<br><img src="https://i.loli.net/2019/05/26/5ceaa416bc95578697.png" alt="TIM图片20190526223449.png"></p>
+<h2 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h2><h3 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h3><p>1.主存的基本组成<br><img src="https://i.loli.net/2019/05/26/5ceaaeae1a0d131497.png" alt="主存的基本组成"></p>
+<p>2.主存和CPU的联系<br><img src="https://i.loli.net/2019/05/26/5ceaaeec9388886955.png" alt="主存和CPU的联系"></p>
+<p>3.主存中存储单元地址的分配<br><img src="https://i.loli.net/2019/05/26/5ceaaf343621110595.png" alt="主存中存储单元地址的分配"></p>
+<p>4.主存的技术指标</p>
+<ul>
+<li>存储容量</li>
+<li>存储速度<ul>
+<li>存取时间</li>
+<li>存取周期</li>
+</ul>
+</li>
+<li>存储器的带框</li>
+</ul>
+<h3 id="半导体存储芯片"><a href="#半导体存储芯片" class="headerlink" title="半导体存储芯片"></a>半导体存储芯片</h3><ul>
+<li>半导体存储芯片的基本结构<br><img src="https://i.loli.net/2019/05/27/5cebcf460346031662.png" alt="TIM图片20190527195006.png"><br><img src="https://i.loli.net/2019/05/27/5cebcf84a009053211.png" alt="TIM图片20190527195227.png"></li>
+<li>半导体存储芯片的译码驱动方式<ul>
+<li>线选法<br><img src="https://i.loli.net/2019/05/27/5cebcfab7bde294788.png" alt="TIM图片20190527195305.png"></li>
+<li>重合法<br><img src="https://i.loli.net/2019/05/27/5cebcff4cd39438555.png" alt="TIM图片20190527195402.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="随机存储器（RAM）"><a href="#随机存储器（RAM）" class="headerlink" title="随机存储器（RAM）"></a>随机存储器（RAM）</h3><ul>
+<li>静态RAM（SRAM）<ul>
+<li>基本电路<br><img src="https://i.loli.net/2019/05/27/5cebd04d7254523351.png" alt="TIM图片20190527195542.png"></li>
+<li>读操作<br><img src="https://i.loli.net/2019/05/27/5cebd10a8268495533.png" alt="TIM图片20190527195856.png"></li>
+<li>写操作<br><img src="https://i.loli.net/2019/05/27/5cebd1db2211590679.png" alt="TIM图片20190527195928.png"></li>
+<li>读时序<br><img src="https://i.loli.net/2019/05/27/5cebd19864bcd16202.png" alt="TIM图片20190527200107.png"></li>
+<li>写时序<br><img src="https://i.loli.net/2019/05/27/5cebd214ae48e81530.png" alt="TIM图片20190527200320.png"></li>
+</ul>
+</li>
+<li>动态RAM（DRAM）</li>
+</ul>
+<h3 id="只读存储器（ROM）"><a href="#只读存储器（ROM）" class="headerlink" title="只读存储器（ROM）"></a>只读存储器（ROM）</h3><h3 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h3><h3 id="存储器的校验"><a href="#存储器的校验" class="headerlink" title="存储器的校验"></a>存储器的校验</h3><h3 id="提高访存速度的措施"><a href="#提高访存速度的措施" class="headerlink" title="提高访存速度的措施"></a>提高访存速度的措施</h3><h2 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h2><h3 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h3><h3 id="Cache-主存的地址映射"><a href="#Cache-主存的地址映射" class="headerlink" title="Cache-主存的地址映射"></a>Cache-主存的地址映射</h3><h3 id="替换算法"><a href="#替换算法" class="headerlink" title="替换算法"></a>替换算法</h3><h2 id="辅助存储器"><a href="#辅助存储器" class="headerlink" title="辅助存储器"></a>辅助存储器</h2><h1 id="输入输出系统"><a href="#输入输出系统" class="headerlink" title="输入输出系统"></a>输入输出系统</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><h2 id="外部设备"><a href="#外部设备" class="headerlink" title="外部设备"></a>外部设备</h2><h2 id="I-O接口"><a href="#I-O接口" class="headerlink" title="I/O接口"></a>I/O接口</h2><h2 id="程序查询方式"><a href="#程序查询方式" class="headerlink" title="程序查询方式"></a>程序查询方式</h2><h2 id="程序中断方式"><a href="#程序中断方式" class="headerlink" title="程序中断方式"></a>程序中断方式</h2><h2 id="DMA方式"><a href="#DMA方式" class="headerlink" title="DMA方式"></a>DMA方式</h2><h1 id="计算机的运算方法"><a href="#计算机的运算方法" class="headerlink" title="计算机的运算方法"></a>计算机的运算方法</h1><h2 id="无符号数和有符号数"><a href="#无符号数和有符号数" class="headerlink" title="无符号数和有符号数"></a>无符号数和有符号数</h2><h2 id="数的定点表示和浮点表示"><a href="#数的定点表示和浮点表示" class="headerlink" title="数的定点表示和浮点表示"></a>数的定点表示和浮点表示</h2><h2 id="定点运算"><a href="#定点运算" class="headerlink" title="定点运算"></a>定点运算</h2><h2 id="浮点四则运算"><a href="#浮点四则运算" class="headerlink" title="浮点四则运算"></a>浮点四则运算</h2><h2 id="算术逻辑单元"><a href="#算术逻辑单元" class="headerlink" title="算术逻辑单元"></a>算术逻辑单元</h2><h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h2 id="机器指令"><a href="#机器指令" class="headerlink" title="机器指令"></a>机器指令</h2><h2 id="操作数类型和操作类型"><a href="#操作数类型和操作类型" class="headerlink" title="操作数类型和操作类型"></a>操作数类型和操作类型</h2><h2 id="寻址方式"><a href="#寻址方式" class="headerlink" title="寻址方式"></a>寻址方式</h2><h2 id="指令格式举例"><a href="#指令格式举例" class="headerlink" title="指令格式举例"></a>指令格式举例</h2><h2 id="RISC技术"><a href="#RISC技术" class="headerlink" title="RISC技术"></a>RISC技术</h2><h1 id="cpu的结构和功能"><a href="#cpu的结构和功能" class="headerlink" title="cpu的结构和功能"></a>cpu的结构和功能</h1><h2 id="CPU的结构"><a href="#CPU的结构" class="headerlink" title="CPU的结构"></a>CPU的结构</h2><h2 id="指令周期"><a href="#指令周期" class="headerlink" title="指令周期"></a>指令周期</h2><h2 id="指令流水"><a href="#指令流水" class="headerlink" title="指令流水"></a>指令流水</h2><h2 id="中断系统"><a href="#中断系统" class="headerlink" title="中断系统"></a>中断系统</h2><h1 id="控制单元的功能"><a href="#控制单元的功能" class="headerlink" title="控制单元的功能"></a>控制单元的功能</h1><h2 id="操作命令的分析"><a href="#操作命令的分析" class="headerlink" title="操作命令的分析"></a>操作命令的分析</h2><h2 id="操作单元的功能"><a href="#操作单元的功能" class="headerlink" title="操作单元的功能"></a>操作单元的功能</h2><h1 id="控制单元的设计"><a href="#控制单元的设计" class="headerlink" title="控制单元的设计"></a>控制单元的设计</h1><h2 id="组合逻辑设计"><a href="#组合逻辑设计" class="headerlink" title="组合逻辑设计"></a>组合逻辑设计</h2><h2 id="微程序设计"><a href="#微程序设计" class="headerlink" title="微程序设计"></a>微程序设计</h2>
+      
+    </div>
 
-                    
-                    
-                    
+    
 
-                    <div class="description post-description">
-    <span class="post-description-item">
-        <time datetime="2019-05-24T13:42:39.000Z" itemprop="datePublished">2019-05-24</time>
+    
+    
+    
 
-    </span>
-    <span class="post-description-item">
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/06/java的基础语法/" rel="next" title="java的基础语法">
+                <i class="fa fa-chevron-left"></i> java的基础语法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
         
-
-    <span>
-        <i class="tags icon"></i>
-    </span>
-
-    
-    <span class="ui tiny label">
-        <a href="/tags/学习笔记/">学习笔记</a>
-    </span>
-
-    
-
-    </span>
-</div>
-
-                </div>
-                
-                <div id="pagination" class="nav-web ui text container pagination">
-
-    <div class="ui stackable two column divided grid container">
-        <div class="row">
-            <div class="column nav-left">
-                
-
-                <a class="ui tiny button disabled"><i class="angle left icon"></i>前一篇</a>
-
-                
-            </div>
-            <div class="column nav-right">
-                
-
-                <a href="/2019/04/06/java的基础语法/" class="ui tiny button">
-                    
-                    java的基础语法
-                    
-                    <i class="angle right icon"></i></a>
-                
-            </div>
-        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
+  </div>
 
-</div>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="ciel">
+            
+              <p class="site-author-name" itemprop="name">ciel</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
                 
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/1013ciel" title="GitHub &rarr; https://github.com/1013ciel" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
             </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
 
             
-            <div class="three wide computer three wide tablet column">
-
-                <div class="ui sticky article-toc" id="article-toc">
-                    <!-- toc -->
-                    <ol class="ui ordered list"><li><a href="#计算机系统"><span>计算机系统</span></a><ol><li><a href="#简介"><span>简介</span></a></li><li><a href="#计算机的基本组成"><span>计算机的基本组成</span></a><ol><li><a href="#冯诺依曼计算机"><span>冯诺依曼计算机</span></a><ol><li><a href="#特点"><span>特点</span></a></li></ol></li><li><a href="#计算机硬件框图"><span>计算机硬件框图</span></a></li><li><a href="#计算机工作步骤"><span>计算机工作步骤</span></a></li></ol></li><li><a href="#计算机硬件的主要技术指标"><span>计算机硬件的主要技术指标</span></a></li></ol></li><li><a href="#系统总线"><span>系统总线</span></a><ol><li><a href="#总线的基本概念"><span>总线的基本概念</span></a></li><li><a href="#总线的分类"><span>总线的分类</span></a></li><li><a href="#总线特性及性能指标"><span>总线特性及性能指标</span></a><ol><li><a href="#总线特性"><span>总线特性</span></a></li><li><a href="#总线的性能指标"><span>总线的性能指标</span></a></li></ol></li><li><a href="#总线结构"><span>总线结构</span></a></li><li><a href="#总线控制"><span>总线控制</span></a><ol><li><a href="#总线判优控制"><span>总线判优控制</span></a></li><li><a href="#总线通信控制"><span>总线通信控制</span></a></li></ol></li></ol></li><li><a href="#存储器"><span>存储器</span></a><ol><li><a href="#概述"><span>概述</span></a><ol><li><a href="#存储器分类"><span>存储器分类</span></a></li><li><a href="#存储器的层次结构"><span>存储器的层次结构</span></a></li></ol></li><li><a href="#主存储器"><span>主存储器</span></a><ol><li><a href="#概述-1"><span>概述</span></a></li><li><a href="#半导体存储芯片"><span>半导体存储芯片</span></a></li><li><a href="#随机存储器（RAM）"><span>随机存储器（RAM）</span></a></li><li><a href="#只读存储器（ROM）"><span>只读存储器（ROM）</span></a></li><li><a href="#存储器与CPU的连接"><span>存储器与CPU的连接</span></a></li><li><a href="#存储器的校验"><span>存储器的校验</span></a></li><li><a href="#提高访存速度的措施"><span>提高访存速度的措施</span></a></li></ol></li><li><a href="#高速缓冲存储器"><span>高速缓冲存储器</span></a><ol><li><a href="#概述-2"><span>概述</span></a></li><li><a href="#Cache-主存的地址映射"><span>Cache-主存的地址映射</span></a></li><li><a href="#替换算法"><span>替换算法</span></a></li></ol></li><li><a href="#辅助存储器"><span>辅助存储器</span></a></li></ol></li><li><a href="#输入输出系统"><span>输入输出系统</span></a><ol><li><a href="#概述-3"><span>概述</span></a></li><li><a href="#外部设备"><span>外部设备</span></a></li><li><a href="#I-O接口"><span>I/O接口</span></a></li><li><a href="#程序查询方式"><span>程序查询方式</span></a></li><li><a href="#程序中断方式"><span>程序中断方式</span></a></li><li><a href="#DMA方式"><span>DMA方式</span></a></li></ol></li><li><a href="#计算机的运算方法"><span>计算机的运算方法</span></a><ol><li><a href="#无符号数和有符号数"><span>无符号数和有符号数</span></a></li><li><a href="#数的定点表示和浮点表示"><span>数的定点表示和浮点表示</span></a></li><li><a href="#定点运算"><span>定点运算</span></a></li><li><a href="#浮点四则运算"><span>浮点四则运算</span></a></li><li><a href="#算术逻辑单元"><span>算术逻辑单元</span></a></li></ol></li><li><a href="#指令系统"><span>指令系统</span></a><ol><li><a href="#机器指令"><span>机器指令</span></a></li><li><a href="#操作数类型和操作类型"><span>操作数类型和操作类型</span></a></li><li><a href="#寻址方式"><span>寻址方式</span></a></li><li><a href="#指令格式举例"><span>指令格式举例</span></a></li><li><a href="#RISC技术"><span>RISC技术</span></a></li></ol></li><li><a href="#cpu的结构和功能"><span>cpu的结构和功能</span></a><ol><li><a href="#CPU的结构"><span>CPU的结构</span></a></li><li><a href="#指令周期"><span>指令周期</span></a></li><li><a href="#指令流水"><span>指令流水</span></a></li><li><a href="#中断系统"><span>中断系统</span></a></li></ol></li><li><a href="#控制单元的功能"><span>控制单元的功能</span></a><ol><li><a href="#操作命令的分析"><span>操作命令的分析</span></a></li><li><a href="#操作单元的功能"><span>操作单元的功能</span></a></li></ol></li><li><a href="#控制单元的设计"><span>控制单元的设计</span></a><ol><li><a href="#组合逻辑设计"><span>组合逻辑设计</span></a></li><li><a href="#微程序设计"><span>微程序设计</span></a></li></ol></li></ol>
-                </div>
-
-            </div>
+            
+            
             
 
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机系统"><span class="nav-number">1.</span> <span class="nav-text">计算机系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机的基本组成"><span class="nav-number">1.2.</span> <span class="nav-text">计算机的基本组成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冯诺依曼计算机"><span class="nav-number">1.2.1.</span> <span class="nav-text">冯诺依曼计算机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特点"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">特点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机硬件框图"><span class="nav-number">1.2.2.</span> <span class="nav-text">计算机硬件框图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机工作步骤"><span class="nav-number">1.2.3.</span> <span class="nav-text">计算机工作步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机硬件的主要技术指标"><span class="nav-number">1.3.</span> <span class="nav-text">计算机硬件的主要技术指标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#系统总线"><span class="nav-number">2.</span> <span class="nav-text">系统总线</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#总线的基本概念"><span class="nav-number">2.1.</span> <span class="nav-text">总线的基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总线的分类"><span class="nav-number">2.2.</span> <span class="nav-text">总线的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总线特性及性能指标"><span class="nav-number">2.3.</span> <span class="nav-text">总线特性及性能指标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总线特性"><span class="nav-number">2.3.1.</span> <span class="nav-text">总线特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总线的性能指标"><span class="nav-number">2.3.2.</span> <span class="nav-text">总线的性能指标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总线结构"><span class="nav-number">2.4.</span> <span class="nav-text">总线结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总线控制"><span class="nav-number">2.5.</span> <span class="nav-text">总线控制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总线判优控制"><span class="nav-number">2.5.1.</span> <span class="nav-text">总线判优控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总线通信控制"><span class="nav-number">2.5.2.</span> <span class="nav-text">总线通信控制</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#存储器"><span class="nav-number">3.</span> <span class="nav-text">存储器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">3.1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#存储器分类"><span class="nav-number">3.1.1.</span> <span class="nav-text">存储器分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储器的层次结构"><span class="nav-number">3.1.2.</span> <span class="nav-text">存储器的层次结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主存储器"><span class="nav-number">3.2.</span> <span class="nav-text">主存储器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#半导体存储芯片"><span class="nav-number">3.2.2.</span> <span class="nav-text">半导体存储芯片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#随机存储器（RAM）"><span class="nav-number">3.2.3.</span> <span class="nav-text">随机存储器（RAM）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#只读存储器（ROM）"><span class="nav-number">3.2.4.</span> <span class="nav-text">只读存储器（ROM）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储器与CPU的连接"><span class="nav-number">3.2.5.</span> <span class="nav-text">存储器与CPU的连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储器的校验"><span class="nav-number">3.2.6.</span> <span class="nav-text">存储器的校验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提高访存速度的措施"><span class="nav-number">3.2.7.</span> <span class="nav-text">提高访存速度的措施</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高速缓冲存储器"><span class="nav-number">3.3.</span> <span class="nav-text">高速缓冲存储器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述-2"><span class="nav-number">3.3.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cache-主存的地址映射"><span class="nav-number">3.3.2.</span> <span class="nav-text">Cache-主存的地址映射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换算法"><span class="nav-number">3.3.3.</span> <span class="nav-text">替换算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#辅助存储器"><span class="nav-number">3.4.</span> <span class="nav-text">辅助存储器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#输入输出系统"><span class="nav-number">4.</span> <span class="nav-text">输入输出系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-3"><span class="nav-number">4.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外部设备"><span class="nav-number">4.2.</span> <span class="nav-text">外部设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#I-O接口"><span class="nav-number">4.3.</span> <span class="nav-text">I/O接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序查询方式"><span class="nav-number">4.4.</span> <span class="nav-text">程序查询方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序中断方式"><span class="nav-number">4.5.</span> <span class="nav-text">程序中断方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DMA方式"><span class="nav-number">4.6.</span> <span class="nav-text">DMA方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机的运算方法"><span class="nav-number">5.</span> <span class="nav-text">计算机的运算方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#无符号数和有符号数"><span class="nav-number">5.1.</span> <span class="nav-text">无符号数和有符号数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数的定点表示和浮点表示"><span class="nav-number">5.2.</span> <span class="nav-text">数的定点表示和浮点表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定点运算"><span class="nav-number">5.3.</span> <span class="nav-text">定点运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点四则运算"><span class="nav-number">5.4.</span> <span class="nav-text">浮点四则运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算术逻辑单元"><span class="nav-number">5.5.</span> <span class="nav-text">算术逻辑单元</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指令系统"><span class="nav-number">6.</span> <span class="nav-text">指令系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#机器指令"><span class="nav-number">6.1.</span> <span class="nav-text">机器指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作数类型和操作类型"><span class="nav-number">6.2.</span> <span class="nav-text">操作数类型和操作类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#寻址方式"><span class="nav-number">6.3.</span> <span class="nav-text">寻址方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指令格式举例"><span class="nav-number">6.4.</span> <span class="nav-text">指令格式举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RISC技术"><span class="nav-number">6.5.</span> <span class="nav-text">RISC技术</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cpu的结构和功能"><span class="nav-number">7.</span> <span class="nav-text">cpu的结构和功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU的结构"><span class="nav-number">7.1.</span> <span class="nav-text">CPU的结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指令周期"><span class="nav-number">7.2.</span> <span class="nav-text">指令周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指令流水"><span class="nav-number">7.3.</span> <span class="nav-text">指令流水</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中断系统"><span class="nav-number">7.4.</span> <span class="nav-text">中断系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制单元的功能"><span class="nav-number">8.</span> <span class="nav-text">控制单元的功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作命令的分析"><span class="nav-number">8.1.</span> <span class="nav-text">操作命令的分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作单元的功能"><span class="nav-number">8.2.</span> <span class="nav-text">操作单元的功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制单元的设计"><span class="nav-number">9.</span> <span class="nav-text">控制单元的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#组合逻辑设计"><span class="nav-number">9.1.</span> <span class="nav-text">组合逻辑设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微程序设计"><span class="nav-number">9.2.</span> <span class="nav-text">微程序设计</span></a></li></ol></li></ol></div>
+            
+
+          </div>
         </div>
+      <!--/noindex-->
+      
+
+      
+
     </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-fas fa-heart-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ciel</span>
+
+  
+
+  
 </div>
 
 
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
-        <div class="ui vertical footer segment">
-    <div class="ui center aligned container">
-        <div class="ui inverted section divider"></div>
-        &copy; 2019 <a href="/">ciel</a>,
-        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a href="http://hexo.io/" target="_blank">Hexo</a>.
-    </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.1</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
 </div>
 
-    </div>
 
 
 
 
-<!-- scripts list from theme config.yml -->
-
-<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
-
-<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
-
-<script src="/js/semantic-ui-algolia.js"></script>
-
-<script src="/js/aloha-events.js"></script>
 
 
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,0" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
